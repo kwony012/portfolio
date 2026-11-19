@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>김광원 포트폴리오</title>
+<meta name="description" content="15년+ 서비스 기획자 김광원의 포트폴리오. 에이전시·스타트업·메디컬 AI를 거쳐 구축부터 운영까지 책임집니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="김광원 · 구축부터 운영까지 책임지는 서비스 기획자">
+<meta property="og:description" content="15년+ 서비스 기획자 김광원의 포트폴리오. 에이전시·스타트업·메디컬 AI를 거쳐 구축부터 운영까지 책임집니다.">
+<meta property="og:url" content="https://kwony012.github.io/portfolio/">
+<meta property="og:image" content="https://kwony012.github.io/portfolio/img/og.jpg">
+<link rel="canonical" href="https://kwony012.github.io/portfolio/">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="img/mark.svg">
+<style>
+@font-face{font-family:"Pretendard Variable"; font-weight:45 920; font-style:normal; font-display:swap; src:url("fonts/PretendardVariable.woff2") format("woff2-variations"), url("fonts/PretendardVariable.woff2") format("woff2")}
+/* 레이아웃 아이디어: Stitch 'Navy Professional' 시안의 구조(유리 헤더, 지표 대시보드, 원칙 카드, 케이스 스터디, 타임라인, 프로세스, CTA 띠)에 우리가 정리한 사실만 담는다. 라이트/다크 두 모드. */
+:root{
+  --canvas:#F8FAFC;
+  --surface:#FFFFFF;
+  --surface-2:#F1F5F9;
+  --surface-3:#EFF4FF;
+  --ink:#0B192C;
+  --ink-2:#44505F;
+  --ink-3:#64748B;
+  --line:rgba(11,25,44,.08);
+  --line-2:rgba(11,25,44,.15);
+  --primary:#0B192C;
+  --primary-hover:#1E3E62;
+  --on-primary:#FFFFFF;
+  --secondary:#1E3E62;
+  --accent:#2563EB;
+  --accent-soft:#EFF6FF;
+  --accent-ink:#1D4ED8;
+  --live-bg:#ECFDF5; --live-ink:#047857; --live-dot:#10B981;
+  --band:#0B192C; --band-ink:#FFFFFF; --band-ink-2:#9FB2CC;
+  --note:#FFF3B8; --note-ink:#5A4A00;
+  --shadow-1:0 1px 3px rgba(11,25,44,.04), 0 1px 2px rgba(11,25,44,.02);
+  --shadow-2:0 10px 20px -5px rgba(11,25,44,.08), 0 4px 6px -2px rgba(11,25,44,.03);
+  --shadow-4:0 25px 50px -12px rgba(11,25,44,.20);
+  --nav-bg:rgba(255,255,255,.85);
+  --font:"Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --canvas:#0B1325; --surface:#131B2E; --surface-2:#181F32; --surface-3:#1A2540;
+    --ink:#DBE2FB; --ink-2:#BDC8D1; --ink-3:#87929A;
+    --line:rgba(219,226,251,.08); --line-2:rgba(219,226,251,.16);
+    --primary:#38BDF8; --primary-hover:#7BD0FF; --on-primary:#00283A;
+    --secondary:#A4C9FF; --accent:#38BDF8; --accent-soft:rgba(56,189,248,.12); --accent-ink:#8ED5FF;
+    --live-bg:rgba(16,185,129,.14); --live-ink:#6EE7B7; --live-dot:#34D399;
+    --band:#0F1D36; --band-ink:#FFFFFF; --band-ink-2:#9FB2CC;
+    --note:#3A3317; --note-ink:#F2DE8A;
+    --shadow-1:0 1px 2px rgba(0,0,0,.3); --shadow-2:0 12px 24px -8px rgba(0,0,0,.5); --shadow-4:0 25px 50px -12px rgba(0,0,0,.6);
+    --nav-bg:rgba(11,19,37,.82);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --canvas:#0B1325; --surface:#131B2E; --surface-2:#181F32; --surface-3:#1A2540;
+  --ink:#DBE2FB; --ink-2:#BDC8D1; --ink-3:#87929A;
+  --line:rgba(219,226,251,.08); --line-2:rgba(219,226,251,.16);
+  --primary:#38BDF8; --primary-hover:#7BD0FF; --on-primary:#00283A;
+  --secondary:#A4C9FF; --accent:#38BDF8; --accent-soft:rgba(56,189,248,.12); --accent-ink:#8ED5FF;
+  --live-bg:rgba(16,185,129,.14); --live-ink:#6EE7B7; --live-dot:#34D399;
+  --band:#0F1D36; --band-ink:#FFFFFF; --band-ink-2:#9FB2CC;
+  --note:#3A3317; --note-ink:#F2DE8A;
+  --shadow-1:0 1px 2px rgba(0,0,0,.3); --shadow-2:0 12px 24px -8px rgba(0,0,0,.5); --shadow-4:0 25px 50px -12px rgba(0,0,0,.6);
+  --nav-bg:rgba(11,19,37,.82);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:84px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto} *{transition:none!important; animation:none!important}}
+body{margin:0; background:var(--canvas); color:var(--ink); font-family:var(--font); font-size:15.5px; line-height:1.7; letter-spacing:-.01em; word-break:keep-all; overflow-wrap:break-word; -webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px}
+h1,h2,h3,h4{text-wrap:balance; margin:0}
+button{font-family:inherit}
+.wrap{max-width:1200px; margin:0 auto; padding:0 48px}
+@media (max-width:1023px){.wrap{padding:0 32px}}
+@media (max-width:767px){.wrap{padding:0 20px}}
+.lbl{font-size:12px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- 헤더 ---------- */
+.nav{position:sticky; top:0; z-index:30; background:var(--nav-bg); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex; align-items:center; gap:18px; min-height:68px}
+.brand{display:flex; align-items:center; gap:10px; text-decoration:none; flex:none}
+.brand img{width:34px; height:34px; border-radius:8px; object-fit:cover}
+.brand b{display:block; font-size:15.5px; font-weight:800; letter-spacing:-.02em; line-height:1.2}
+.brand span{display:block; font-size:11.5px; color:var(--ink-3); line-height:1.2}
+.pills{display:flex; gap:2px; padding:4px; margin-left:auto; border:1px solid var(--line); border-radius:10px; background:var(--surface)}
+.pills a{font-size:13.5px; font-weight:500; text-decoration:none; color:var(--ink-2); padding:6px 12px; border-radius:7px; white-space:nowrap}
+.pills a:hover{background:var(--surface-2); color:var(--ink)}
+.pills a.on{background:var(--primary); color:var(--on-primary)}
+.tools{display:flex; align-items:center; gap:6px}
+.icon-btn{display:inline-grid; place-items:center; width:36px; height:36px; border-radius:8px; border:1px solid var(--line); background:var(--surface); color:var(--ink-2); cursor:pointer}
+.icon-btn:hover{border-color:var(--line-2); color:var(--ink)}
+.icon-btn svg{width:18px; height:18px}
+.dl-btn{display:inline-flex; align-items:center; gap:6px; height:36px; padding:0 12px; border-radius:8px; background:var(--primary); color:var(--on-primary); font-size:13px; font-weight:700; text-decoration:none}
+.dl-btn:hover{filter:brightness(1.08)}
+.dl-btn svg{width:16px; height:16px}
+@media (max-width:640px){.dl-btn{width:36px; padding:0; justify-content:center}.dl-btn span{display:none}}
+.dl-cta{margin-top:6px; display:inline-flex; align-items:center; gap:8px}
+.dl-cta svg{width:16px; height:16px}
+.memo-toggle{font-size:12px; font-weight:600; background:var(--note); color:var(--note-ink); border:0; border-radius:8px; padding:0 10px; height:36px; cursor:pointer}
+.btn{display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600; text-decoration:none; border-radius:8px; padding:10px 16px; cursor:pointer; border:1px solid transparent; white-space:nowrap; line-height:1.2}
+.btn svg{width:16px; height:16px}
+.btn-primary{background:var(--primary); color:var(--on-primary)}
+.btn-primary:hover{background:var(--primary-hover)}
+.btn-secondary{background:var(--surface); color:var(--ink); border-color:var(--line-2)}
+.btn-secondary:hover{background:var(--surface-2)}
+@media (max-width:1100px){.pills a.opt{display:none}}
+@media (max-width:767px){.pills{display:none} .nav .btn-primary span{display:none} .brand span{display:none} .tools{margin-left:auto}}
+
+/* ---------- 히어로 ---------- */
+.hero{padding:72px 0 80px}
+.hero .wrap{display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:56px; align-items:center}
+@media (max-width:1023px){.hero .wrap{grid-template-columns:1fr; gap:40px} .hero{padding:48px 0 56px}}
+.badge-row{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:22px}
+.badge{display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-2); border:1px solid var(--line-2); background:var(--surface); padding:5px 12px; border-radius:999px}
+.dot{width:7px; height:7px; border-radius:50%; background:var(--live-dot); box-shadow:0 0 0 0 rgba(16,185,129,.5); animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(16,185,129,.45)} 70%{box-shadow:0 0 0 7px rgba(16,185,129,0)} 100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
+.hero h1{font-size:clamp(30px,3.8vw,46px); line-height:1.2; font-weight:800; letter-spacing:-.035em}
+.hero h1 em{font-style:normal; color:var(--accent)}
+.hero .lede{font-size:17px; line-height:1.75; color:var(--ink-2); margin:20px 0 0; max-width:60ch}
+.hashtags{display:flex; flex-wrap:wrap; gap:6px; margin-top:22px}
+.hashtags span{font-size:12.5px; font-weight:600; color:var(--ink-2); background:var(--surface-2); border:1px solid var(--line); border-radius:4px; padding:3px 9px}
+.ctas{display:flex; flex-wrap:nowrap; gap:8px; margin-top:28px}
+
+.visual{position:relative}
+.photo-card{background:var(--surface); border:1px solid var(--line); border-radius:16px; box-shadow:var(--shadow-2); padding:14px}
+.photo-wrap{position:relative; aspect-ratio:4/3.1; border-radius:10px; overflow:hidden; background:var(--surface-2)}
+.photo-wrap img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 30%}
+.name-chip{position:absolute; left:12px; bottom:12px; display:inline-flex; align-items:center; gap:8px; font-size:12.5px; font-weight:600; color:#fff; background:rgba(11,25,44,.78); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); padding:6px 12px; border-radius:6px}
+.photo-stats{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px}
+.photo-stats div{background:var(--surface-3); border-radius:8px; padding:12px 14px}
+.photo-stats .lbl{font-size:11px; color:var(--accent-ink)}
+.photo-stats b{display:block; font-size:24px; font-weight:800; letter-spacing:-.03em; line-height:1.25}
+.photo-stats span:last-child{font-size:12.5px; color:var(--ink-3)}
+.now-card{margin-top:10px; background:var(--canvas); border:1px solid var(--line); border-radius:8px; padding:12px 14px}
+.now-card .lbl{color:var(--accent)}
+.now-card b{display:block; font-size:16px; font-weight:800; letter-spacing:-.02em; margin-top:4px}
+.now-card p{margin:2px 0 10px; font-size:13px; color:var(--ink-3)}
+.progress{height:4px; background:var(--surface-2); border-radius:2px; overflow:hidden}
+.progress span{display:block; height:100%; width:100%; background:linear-gradient(90deg, var(--accent), var(--secondary))}
+
+
+/* ---------- 섹션 공통 ---------- */
+.section{padding:88px 0; border-top:1px solid var(--line)}
+.section.alt{background:var(--surface)}
+@media (max-width:767px){.section{padding:64px 0}}
+.sec-head{display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap; margin-bottom:36px}
+.sec-head .lbl{display:flex; align-items:center; gap:8px; color:var(--accent); margin-bottom:10px}
+.sec-head h2{font-size:clamp(24px,2.6vw,30px); font-weight:800; letter-spacing:-.03em; line-height:1.3}
+.sec-head .desc{max-width:46ch; font-size:14px; color:var(--ink-3); margin:0}
+.sec-head .desc.small{font-size:12px; font-weight:600; letter-spacing:.06em; text-transform:uppercase}
+
+/* 검토 메모 */
+.memo{display:block; background:var(--note); color:var(--note-ink); font-size:13px; line-height:1.55; padding:10px 12px; border-radius:6px; margin:14px 0 0; border-left:3px solid currentColor}
+.memo::before{content:"검토 메모 · "; font-weight:700}
+body.hide-memo .memo{display:none}
+
+/* ---------- 지표 ---------- */
+.metrics{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px}
+@media (max-width:1023px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px} .metric{padding:16px 14px 14px} .metric .val{font-size:30px; margin-top:12px} .metric h3{font-size:14px} .metric p{font-size:12px; line-height:1.55; margin:6px 0 0; word-break:keep-all} .metric .foot{margin-top:10px; font-size:11px; padding:4px 7px}}
+.metric{position:relative; background:var(--surface); border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow-1); padding:22px 22px 20px; display:flex; flex-direction:column}
+.metric::before{content:""; position:absolute; left:-1px; top:18px; bottom:18px; width:3px; border-radius:0 3px 3px 0; background:var(--accent)}
+.metric .top{display:flex; justify-content:space-between; align-items:center}
+.metric .top svg{width:18px; height:18px; color:var(--ink-3)}
+.metric .val{font-size:40px; line-height:1.1; font-weight:800; letter-spacing:-.04em; margin-top:18px; color:var(--ink)}
+.metric .val small{font-size:.5em; font-weight:700; margin-left:2px; color:var(--ink-3)}
+.metric h3{font-size:16px; font-weight:700; letter-spacing:-.02em; margin-top:6px}
+.metric p{font-size:13.5px; color:var(--ink-3); margin:6px 0 16px; line-height:1.6}
+.metric .foot{margin-top:auto; font-size:12px; font-weight:600; color:var(--ink-2); background:var(--surface-2); border-radius:4px; padding:5px 9px; align-self:flex-start}
+
+/* ---------- 원칙 ---------- */
+.principles{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px}
+@media (max-width:1023px){.principles{grid-template-columns:1fr}}
+.principle{background:var(--canvas); border:1px solid var(--line); border-radius:8px; padding:24px; display:flex; flex-direction:column; transition:transform .18s, box-shadow .18s, border-color .18s}
+.section.alt .principle{background:var(--canvas)}
+.principle:hover{transform:translateY(-2px); box-shadow:var(--shadow-2); border-color:rgba(37,99,235,.25)}
+.principle .top{display:flex; justify-content:space-between; align-items:center}
+.principle .tag{font-size:11.5px; font-weight:700; letter-spacing:.08em; color:var(--accent-ink); background:var(--accent-soft); padding:3px 9px; border-radius:4px}
+.principle .top svg{width:20px; height:20px; color:var(--accent)}
+.principle h3{font-size:19px; font-weight:800; letter-spacing:-.02em; margin-top:18px}
+.principle .sub{font-size:15px; font-weight:600; color:var(--ink); margin:6px 0 10px; line-height:1.55}
+.principle p{font-size:14px; color:var(--ink-3); margin:0 0 18px}
+.practice{margin-top:auto; background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:12px 14px}
+.practice .lbl{font-size:11px}
+.practice b{display:block; font-size:13.5px; font-weight:600; margin-top:4px}
+
+/* ---------- 대표 케이스 ---------- */
+.cases{display:grid; gap:24px}
+.case{display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:28px; background:var(--surface); border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow-1); padding:24px; transition:transform .18s, box-shadow .18s, border-color .18s}
+.case:hover{transform:translateY(-2px); box-shadow:var(--shadow-2); border-color:rgba(37,99,235,.25)}
+@media (max-width:900px){.case{grid-template-columns:1fr; padding:18px}}
+.case-media{display:flex; flex-direction:column; gap:12px}
+.case-img{position:relative; aspect-ratio:16/9; border-radius:8px; overflow:hidden; background:var(--surface-2); border:1px solid var(--line)}
+.case-img img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
+.case-img .ctag{position:absolute; right:10px; bottom:10px; font-size:11.5px; font-weight:700; color:#0B192C; background:rgba(255,255,255,.92); padding:3px 9px; border-radius:4px}
+.mini{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+.mini div{background:var(--canvas); border:1px solid var(--line); border-radius:6px; padding:10px 12px}
+.mini .lbl{font-size:11px}
+.mini b{display:block; font-size:22px; font-weight:800; letter-spacing:-.03em; color:var(--accent); line-height:1.25}
+.mini span{font-size:12px; color:var(--ink-3)}
+.chips{display:flex; flex-wrap:wrap; gap:6px; align-items:center}
+.chip{font-size:12px; font-weight:600; padding:3px 9px; border-radius:4px; background:var(--surface-2); color:var(--ink-2); border:1px solid var(--line); line-height:1.5}
+.chip.blue{background:var(--accent-soft); color:var(--accent-ink); border-color:transparent}
+.chip.live{background:var(--live-bg); color:var(--live-ink); border-color:transparent; display:inline-flex; align-items:center; gap:6px}
+.chip.live .dot{width:6px; height:6px}
+.case h3{font-size:22px; font-weight:800; letter-spacing:-.03em; line-height:1.35; margin:12px 0 4px}
+.case .client{font-size:13px; color:var(--ink-3)}
+.psr{display:grid; gap:12px; margin-top:16px}
+.psr div{display:grid; grid-template-columns:118px 1fr; gap:12px; font-size:14px}
+.psr .k{font-size:11.5px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; padding-top:2px}
+.psr .k.p{color:#DC2626} .psr .k.s{color:var(--accent-ink)} .psr .k.i{color:var(--live-ink)}
+:root[data-theme="dark"] .psr .k.p{color:#F87171}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .psr .k.p{color:#F87171}}
+.psr p{margin:0; color:var(--ink-2)}
+@media (max-width:600px){.psr div{grid-template-columns:1fr; gap:2px}}
+.case-foot{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin-top:18px; padding-top:16px; border-top:1px solid var(--line)}
+.link-btn{all:unset; cursor:pointer; display:inline-flex; align-items:center; gap:6px; font-size:13.5px; font-weight:700; color:var(--ink)}
+.link-btn:hover{color:var(--accent)}
+.link-btn:focus-visible{outline:2px solid var(--accent); border-radius:4px}
+.link-btn svg{width:16px; height:16px}
+
+/* ---------- 경력 타임라인 ---------- */
+.timeline{position:relative; display:grid; gap:18px; padding-left:30px}
+.timeline::before{content:""; position:absolute; left:8px; top:10px; bottom:10px; width:2px; background:var(--line-2)}
+.job{position:relative; display:grid; grid-template-columns:230px minmax(0,1fr); gap:28px; background:var(--surface); border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow-1); padding:22px 24px}
+.job::before{content:""; position:absolute; left:-27px; top:28px; width:10px; height:10px; border-radius:50%; background:var(--surface); border:2px solid var(--ink-3)}
+.job.current::before{background:var(--accent); border-color:var(--accent); box-shadow:0 0 0 4px var(--accent-soft)}
+@media (max-width:767px){.job{grid-template-columns:1fr; gap:10px; padding:18px}}
+.job .co{font-size:17px; font-weight:800; letter-spacing:-.02em}
+.job .role{font-size:14px; color:var(--ink-2)}
+.job .when{font-size:12.5px; font-weight:600; color:var(--ink-3); margin-top:6px; font-variant-numeric:tabular-nums}
+.job .jtag{display:inline-block; margin-top:10px}
+.job .summary{font-size:14.5px; color:var(--ink-2); margin:0 0 8px}
+.job ul{list-style:none; margin:0; padding:0}
+.job li button{all:unset; box-sizing:border-box; cursor:pointer; display:flex; align-items:baseline; gap:10px; width:100%; padding:8px 10px; margin:0 -10px; border-radius:6px}
+.job li button:hover{background:var(--surface-2)}
+.job li button:hover .nm{color:var(--accent)}
+.job li button:focus-visible{outline:2px solid var(--accent)}
+.job li .nm{font-weight:600; font-size:14.5px}
+.job li .pf{font-size:12px; color:var(--ink-3)}
+.job li .dt{margin-left:auto; font-size:12.5px; color:var(--ink-3); white-space:nowrap; font-variant-numeric:tabular-nums}
+@media (max-width:767px){.job li .dt{display:none}}
+
+/* ---------- 전체 프로젝트 ---------- */
+.filters{display:flex; flex-wrap:wrap; gap:10px 22px; align-items:center; margin-bottom:22px}
+.fgroup{display:flex; flex-wrap:wrap; gap:6px; align-items:center}
+.fgroup .lbl{margin-right:6px}
+.fchip{font-size:13px; font-weight:500; border:1px solid var(--line-2); background:var(--surface); color:var(--ink-2); border-radius:6px; padding:5px 12px; cursor:pointer}
+.fchip:hover{border-color:var(--accent); color:var(--accent)}
+.fchip[aria-pressed="true"]{background:var(--primary); border-color:var(--primary); color:var(--on-primary)}
+.count{margin-left:auto; font-size:13px; color:var(--ink-3); font-variant-numeric:tabular-nums}
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:18px}
+.card{all:unset; box-sizing:border-box; cursor:pointer; display:flex; flex-direction:column; background:var(--surface); border:1px solid var(--line); border-radius:8px; overflow:hidden; box-shadow:var(--shadow-1); transition:transform .18s, box-shadow .18s, border-color .18s}
+.card:hover{transform:translateY(-2px); box-shadow:var(--shadow-2); border-color:rgba(37,99,235,.25)}
+.card:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.thumb{position:relative; aspect-ratio:16/9; background:var(--surface-2); overflow:hidden; border-bottom:1px solid var(--line)}
+.thumb img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
+.thumb .dev{position:absolute; right:8px; bottom:8px; font-size:11px; font-weight:600; color:#fff; background:rgba(11,25,44,.72); padding:2px 8px; border-radius:4px}
+.thumb, .case-img, .d-cover{container-type:inline-size}
+.gen{position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-start; align-items:flex-start; padding:10.5cqw 6.5cqw; color:#fff; background:radial-gradient(60cqw 40cqw at 100% 0%, rgba(56,189,248,.28), transparent 60%), linear-gradient(135deg, #1E3E62, #0B192C)}
+.gen .gt{font-size:6.6cqw; font-weight:800; letter-spacing:-.03em; line-height:1.25; max-width:80%}
+.gen .gs{font-size:4.2cqw; font-weight:500; color:#B7C6DB; margin-top:1.2cqw; line-height:1.3}
+.gen .gc{position:absolute; left:6.5cqw; bottom:6.5cqw; font-size:2.6cqw; font-weight:600; color:#8FA3BF; letter-spacing:.02em}
+.card .body{padding:14px 16px 16px; display:flex; flex-direction:column; gap:2px; flex:1}
+.card .client{font-size:12px; color:var(--ink-3)}
+.card .title{font-size:16px; font-weight:700; letter-spacing:-.02em; line-height:1.45}
+.card .sub{font-size:13.5px; color:var(--ink-2)}
+.card .when{font-size:12.5px; color:var(--ink-3); font-variant-numeric:tabular-nums}
+.card .meta{display:flex; flex-wrap:wrap; gap:5px; margin-top:auto; padding-top:10px}
+.empty{padding:30px; text-align:center; color:var(--ink-3); border:1px dashed var(--line-2); border-radius:8px}
+
+/* ---------- 프로세스 ---------- */
+.process{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px}
+@media (max-width:1023px){.process{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.process{grid-template-columns:1fr}}
+.phase{background:var(--canvas); border:1px solid var(--line); border-radius:8px; padding:20px}
+.phase .top{display:flex; justify-content:space-between; align-items:center}
+.phase .top svg{width:18px; height:18px; color:var(--accent)}
+.phase h3{font-size:17px; font-weight:800; letter-spacing:-.02em; margin:12px 0 8px}
+.phase ul{margin:0; padding-left:16px; font-size:13.5px; color:var(--ink-2)}
+.phase li{margin:2px 0}
+
+/* ---------- 스킬 ---------- */
+.skills{display:grid; grid-template-columns:minmax(0,7fr) minmax(0,5fr); gap:20px}
+@media (max-width:900px){.skills{grid-template-columns:1fr}}
+.box{background:var(--surface); border:1px solid var(--line); border-radius:8px; box-shadow:var(--shadow-1); padding:24px 26px}
+.box > .lbl{display:block; margin-bottom:16px}
+.dl{display:grid; grid-template-columns:120px 1fr; gap:14px 20px; margin:0; font-size:14.5px}
+.dl dt{font-size:13px; font-weight:600; color:var(--ink-3); padding-top:2px}
+.dl dd{margin:0}
+.dl ul{margin:0; padding-left:16px}
+.edu{display:grid; gap:18px}
+.edu .yr{font-size:12.5px; font-weight:600; color:var(--ink-3); font-variant-numeric:tabular-nums}
+.edu b{font-size:16px}
+
+/* ---------- CTA ---------- */
+.cta-wrap{padding:72px 0 88px}
+@media (max-width:640px){.cta-wrap{padding:48px 0 64px}}
+.cta{position:relative; overflow:hidden; background:radial-gradient(700px 300px at 85% 0%, rgba(56,189,248,.22), transparent 60%), var(--band); color:var(--band-ink); border-radius:16px; padding:44px 48px; display:grid; grid-template-columns:minmax(0,1fr) auto; gap:32px; align-items:center}
+@media (max-width:860px){.cta{grid-template-columns:1fr; padding:32px 26px}}
+.cta .lbl{color:#7DD3FC; display:flex; align-items:center; gap:8px; letter-spacing:0; font-size:13px}
+.cta h2{font-size:clamp(22px,2.6vw,30px); font-weight:800; letter-spacing:-.03em; line-height:1.4; margin:10px 0 8px}
+.cta p{margin:0; color:var(--band-ink-2); font-size:14.5px}
+.cta-actions{display:grid; gap:10px; justify-items:start}
+.cta .btn-light{background:#fff; color:#0B192C}
+.cta .btn-light:hover{background:#E2E8F0}
+.cta .btn-ghost-w{background:transparent; color:#fff; border:1px solid rgba(255,255,255,.4)}
+.cta .btn-ghost-w:hover{background:rgba(255,255,255,.1)}
+.cta .btn{justify-content:center; min-width:168px}
+.cta .line{font-size:13.5px; color:var(--band-ink-2)}
+.cta .line a{color:#fff; text-decoration:none; border-bottom:1px solid rgba(255,255,255,.35)}
+.copy{font:600 11.5px var(--font); background:rgba(255,255,255,.12); color:#fff; border:0; border-radius:4px; padding:2px 8px; margin-left:8px; cursor:pointer}
+.copy:hover{background:rgba(255,255,255,.22)}
+
+/* ---------- 푸터 ---------- */
+footer{border-top:1px solid var(--line); background:var(--surface); padding:48px 0 28px; font-size:13.5px; color:var(--ink-2)}
+.foot-grid{display:grid; grid-template-columns:minmax(0,2fr) 1fr 1fr; gap:32px}
+@media (max-width:767px){.foot-grid{grid-template-columns:1fr}}
+.foot-grid b{display:block; color:var(--ink); font-size:16px; font-weight:800; margin-bottom:6px}
+.foot-grid .lbl{display:block; margin-bottom:10px}
+.foot-grid ul{list-style:none; margin:0; padding:0; display:grid; gap:6px}
+.foot-grid a{text-decoration:none}
+.foot-grid a:hover{color:var(--accent)}
+.foot-bottom{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-top:36px; padding-top:18px; border-top:1px solid var(--line); font-size:12px; color:var(--ink-3)}
+
+/* ---------- 상세 페이지 ---------- */
+
+.detail{position:fixed; inset:0; z-index:50; background:var(--canvas); overflow:auto; display:none}
+.detail.on{display:block}
+.d-bar{position:sticky; top:0; z-index:2; background:var(--nav-bg); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--line)}
+.d-bar .wrap{display:flex; align-items:center; gap:10px; min-height:60px}
+.d-bar .crumb{font-size:13px; color:var(--ink-3); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.d-bar .crumb b{color:var(--ink); font-weight:600}
+.d-bar .sp{flex:1}
+.d-hero{padding:44px 0 32px; border-bottom:1px solid var(--line); background:var(--surface)}
+.d-hero h1{font-size:clamp(28px,3.6vw,42px); font-weight:800; letter-spacing:-.035em; line-height:1.25; margin:14px 0 6px}
+.d-hero h1 span{font-weight:500; color:var(--ink-3)}
+.d-hero .intro{font-size:17px; color:var(--ink-2); max-width:70ch; margin:10px 0 0}
+.d-meta{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:0; margin-top:28px; border:1px solid var(--line); border-radius:8px; background:var(--canvas)}
+.d-meta div{padding:14px 18px; border-left:1px solid var(--line)}
+.d-meta div:first-child{border-left:0}
+.d-meta b{display:block; font-size:15px; font-weight:700; margin-top:2px}
+@media (max-width:767px){.d-meta{grid-template-columns:1fr 1fr} .d-meta div:nth-child(3){border-left:0} .d-meta div:nth-child(n+3){border-top:1px solid var(--line)}}
+.d-cover{margin-top:28px; border-radius:12px; overflow:hidden; border:1px solid var(--line); aspect-ratio:16/9; position:relative; background:var(--surface-2)}
+.d-cover img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
+.d-body{padding:40px 0 24px}
+.d-body .wrap{display:grid; grid-template-columns:minmax(0,1fr) 320px; gap:40px; align-items:start}
+@media (max-width:900px){.d-body .wrap{grid-template-columns:1fr}}
+.d-sec{padding:0 0 28px; margin-bottom:28px; border-bottom:1px solid var(--line)}
+.d-sec:last-child{border-bottom:0}
+.d-sec h2{font-size:20px; font-weight:800; letter-spacing:-.02em; margin:6px 0 12px}
+.d-sec h2 + p{color:var(--ink-2); margin:0}
+.tasklist{list-style:none; margin:16px 0 0; padding:0; display:grid; gap:8px}
+.tasklist li{display:grid; grid-template-columns:22px 1fr; gap:8px; font-size:14.5px; background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:10px 12px}
+.tasklist li::before{content:""; width:8px; height:8px; margin-top:8px; border-radius:2px; background:var(--accent)}
+.side{position:sticky; top:84px; display:grid; gap:16px}
+@media (max-width:900px){.side{position:static}}
+.side .box{padding:20px}
+.bars{display:grid; gap:12px}
+.bar .row{display:flex; justify-content:space-between; font-size:13.5px}
+.bar .row b{font-weight:800; color:var(--accent); font-variant-numeric:tabular-nums}
+.bar .track{height:6px; background:var(--surface-2); border-radius:3px; overflow:hidden; margin-top:6px}
+.bar .fill{height:100%; background:linear-gradient(90deg, var(--accent), var(--secondary)); border-radius:3px}
+.side .note{font-size:12.5px; color:var(--ink-3); margin:10px 0 0}
+.side dl{display:grid; grid-template-columns:72px 1fr; gap:8px 12px; margin:0; font-size:14px}
+.side dt{color:var(--ink-3); font-size:12.5px; font-weight:600; padding-top:2px}
+.side dd{margin:0}
+.gallery{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px}
+@media (max-width:640px){.gallery{grid-template-columns:1fr}}
+.gallery button{all:unset; cursor:zoom-in; display:block; background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; box-shadow:var(--shadow-1)}
+.gallery button:focus-visible{outline:2px solid var(--accent)}
+.gallery img{display:block; width:100%; height:auto}
+.gallery.wide{grid-template-columns:1fr}
+.gallery .n{display:block; font-size:12px; font-weight:600; color:var(--ink-3); padding:8px 12px; background:var(--surface); border-top:1px solid var(--line)}
+.ph{display:grid; place-items:center; aspect-ratio:16/9; border:1px dashed var(--line-2); border-radius:8px; color:var(--ink-3); font-size:13px; background:var(--surface)}
+.d-nav{display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:8px 0 64px}
+.d-nav button{all:unset; box-sizing:border-box; cursor:pointer; background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:16px 18px; display:grid; gap:2px}
+.d-nav button:hover{border-color:rgba(37,99,235,.35); box-shadow:var(--shadow-2)}
+.d-nav button:focus-visible{outline:2px solid var(--accent)}
+.d-nav button.next{text-align:right}
+.d-nav b{font-size:15.5px; font-weight:700}
+.lb{position:fixed; inset:0; z-index:70; background:rgba(6,12,24,.94); display:none; flex-direction:column}
+.lb.on{display:flex}
+.lb-bar{display:flex; align-items:center; gap:8px; padding:10px 16px; color:#fff; font-size:13px}
+.lb-bar .sp{flex:1}
+.lb-bar button{font:600 13px var(--font); background:rgba(255,255,255,.12); color:#fff; border:0; border-radius:6px; padding:6px 12px; cursor:pointer}
+.lb-stage{flex:1; overflow:auto; display:flex; justify-content:center; align-items:flex-start; padding:0 16px 24px}
+.lb-stage img{max-width:min(1100px,100%); height:auto; background:#fff; border-radius:4px}
+body.lock{overflow:hidden}
+
+/* 태블릿 · 모바일: 큰 사진 카드 대신 작은 프로필 */
+.m-profile{display:none}
+@media (max-width:1023px){
+  .hero .visual{display:none}
+  .hero .badge-row{display:none}
+  .hero .wrap > div:first-child{background:var(--surface); border:1px solid var(--line); border-radius:14px; box-shadow:var(--shadow-1); padding:28px}
+  .m-profile{display:flex; gap:18px; align-items:center; margin-bottom:24px}
+  .m-photo{position:relative; flex:none}
+  .m-photo img{display:block; width:96px; height:96px; border-radius:12px; object-fit:cover}
+  .m-check{position:absolute; right:-6px; bottom:-6px; width:26px; height:26px; border-radius:50%; background:var(--secondary); color:#fff; display:grid; place-items:center; border:3px solid var(--surface)}
+  .m-check svg{width:13px; height:13px}
+  .m-top{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+  .m-yrs{display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-3)}
+  .m-name{font-size:24px; font-weight:800; letter-spacing:-.03em; line-height:1.3; margin-top:2px}
+  .m-name span{font-weight:600; color:var(--ink-3); font-size:.75em}
+  .m-sub{font-size:13.5px; color:var(--ink-3); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+}
+@media (max-width:520px){
+  .hero .wrap > div:first-child{padding:22px 20px}
+  .m-photo img{width:80px; height:80px}
+  .m-name{font-size:21px}
+  .m-profile{gap:14px}
+}
+
+.phases{list-style:none; margin:0; padding:0; display:grid; gap:12px}
+.phases > li{display:grid; grid-template-columns:170px minmax(0,1fr); gap:20px; background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:8px; padding:16px 18px}
+.ph-when b{display:block; font-size:14px; font-weight:700}
+.ph-when span{font-size:12.5px; color:var(--ink-3)}
+.ph-body h3{font-size:16px; font-weight:800; letter-spacing:-.02em; margin-bottom:4px}
+.ph-body p{margin:0; font-size:14px; color:var(--ink-2)}
+.ph-body ul{margin:6px 0 0; padding-left:18px; font-size:14px; color:var(--ink-2)}
+@media (max-width:600px){.phases > li{grid-template-columns:1fr; gap:6px}}
+.g-head{font-size:15px; font-weight:800; margin:18px 0 10px}
+.g-head:first-child{margin-top:0}
+.g-head span{font-size:12.5px; font-weight:600; color:var(--ink-3); margin-left:4px}
+
+.highlight{margin:14px 0 0; padding:12px 14px; border-radius:8px; background:var(--accent-soft); color:var(--ink); font-size:14.5px; font-weight:600; line-height:1.6; border-left:3px solid var(--accent)}
+.d-hero .highlight{max-width:72ch; font-size:15.5px}
+.related{all:unset; box-sizing:border-box; cursor:pointer; display:grid; gap:1px; width:100%; margin-top:14px; padding:12px 14px; border:1px solid var(--line); border-radius:8px; background:var(--canvas)}
+.related:hover{border-color:var(--accent)}
+.related:focus-visible{outline:2px solid var(--accent)}
+.related b{font-size:15px; font-weight:700}
+.related span:last-child{font-size:12.5px; color:var(--ink-3)}
+
+.pgroups{display:grid; gap:40px}
+.pg-head{display:flex; align-items:center; gap:10px; font-size:20px; font-weight:800; letter-spacing:-.02em; margin:0 0 16px; padding-bottom:12px; border-bottom:1px solid var(--line)}
+.pg-head span{font-size:12.5px; font-weight:700; color:var(--accent-ink); background:var(--accent-soft); border-radius:999px; padding:1px 9px}
+.filters{row-gap:12px}
+
+.job li .go{flex:none; display:inline-flex; align-items:center; gap:3px; font-size:12px; font-weight:700; color:var(--accent-ink); background:var(--accent-soft); border-radius:4px; padding:1px 7px; margin-left:4px}
+.job li .go svg{width:12px; height:12px}
+.job li .go-none{flex:none; width:52px}
+.row-plain{display:flex; align-items:baseline; gap:10px; padding:8px 10px; margin:0 -10px}
+.row-plain .nm{font-weight:500; font-size:14.5px; color:var(--ink-2)}
+.row-plain .pf{font-size:12px; color:var(--ink-3)}
+.row-plain .dt{margin-left:auto; font-size:12.5px; color:var(--ink-3); white-space:nowrap; font-variant-numeric:tabular-nums}
+.legend{display:inline-block; font-size:14px; line-height:1.3; font-weight:700; color:var(--accent-ink); background:var(--accent-soft); border-radius:4px; padding:0 6px}
+@media (max-width:767px){.row-plain .dt{display:none} .job li .go-none{display:none}}
+
+.impacts{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px}
+@media (max-width:700px){.impacts{grid-template-columns:1fr}}
+.impacts > .impact:only-child{grid-column:1/-1}
+.i-head .i-mine{margin-left:auto; flex:none}
+.impact{background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:16px 18px; display:flex; flex-direction:column; gap:12px}
+.i-head{display:flex; align-items:center; gap:10px}
+.i-no{display:inline-grid; place-items:center; width:28px; height:28px; border-radius:7px; background:var(--accent-soft); color:var(--accent-ink); font-size:12.5px; font-weight:800}
+.i-head h3{font-size:16px; font-weight:800; letter-spacing:-.02em}
+.ba{display:grid; gap:8px}
+.ba > div{border-radius:6px; padding:9px 12px}
+.ba .b{background:var(--surface-2)}
+.ba .a{background:var(--accent-soft)}
+.ba .lbl{font-size:10.5px}
+.ba .a .lbl{color:var(--accent-ink)}
+.ba p{margin:2px 0 0; font-size:14px; line-height:1.55}
+.ba .a p{font-weight:700; color:var(--ink)}
+.i-where{margin-top:auto; font-size:12px; color:var(--ink-3)}
+
+/* 태블릿 · 모바일: 경력 항목을 프로젝트명 한 줄, 유형 · 기간 한 줄로 */
+@media (max-width:1023px){
+  .job li button, .row-plain{flex-wrap:wrap; row-gap:2px; column-gap:4px; align-items:center}
+  .job li .nm, .row-plain .nm{flex:1 1 100%; line-height:1.5}
+  .job li .pf, .row-plain .pf{order:2}
+  .job li .dt, .row-plain .dt{display:inline; order:3; margin-left:0; font-size:12px}
+  .job li .dt::before, .row-plain .dt::before{content:"·"; margin:0 6px 0 2px; color:var(--ink-3)}
+  .job li .dt:empty::before, .row-plain .dt:empty::before{content:none}
+  .job li .go{order:4; margin-left:auto}
+  .job li .go-none{display:none}
+}
+
+.letter{padding:48px 0 80px}
+.letter .wrap{max-width:860px}
+.letter h1{font-size:clamp(30px,3.6vw,40px); font-weight:800; letter-spacing:-.035em; margin:8px 0 4px}
+.l-meta{margin:0 0 32px; color:var(--ink-3); font-size:14px}
+.l-body{display:grid; gap:0; border-top:1px solid var(--line)}
+.l-body section{display:grid; grid-template-columns:150px minmax(0,1fr); gap:28px; padding:26px 0; border-bottom:1px solid var(--line)}
+.l-tag{font-size:12.5px; font-weight:800; letter-spacing:.04em; color:var(--accent-ink); padding-top:4px}
+.l-body p{margin:0 0 14px; font-size:16.5px; line-height:1.9; color:var(--ink)}
+.l-body p:last-child{margin-bottom:0}
+.l-lead{font-size:20px!important; font-weight:700; letter-spacing:-.02em; line-height:1.6!important}
+.l-sign{margin-top:24px!important; color:var(--ink-2)!important}
+@media (max-width:700px){.l-body section{grid-template-columns:1fr; gap:6px; padding:22px 0}}
+
+.brand .mark{width:34px;height:34px;flex:none;display:block}
+.brand .mark rect{fill:var(--primary)}
+.brand .mark path{fill:var(--on-primary,#fff)}
+
+.g-acc{border:1px solid var(--line); border-radius:10px; background:var(--surface); margin-bottom:12px}
+.g-acc > summary{list-style:none; cursor:pointer; display:flex; align-items:center; gap:6px; margin:0; padding:16px 18px; border-radius:10px}
+.g-acc > summary::-webkit-details-marker{display:none}
+.g-acc > summary:hover{background:var(--canvas)}
+.g-acc > summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.g-acc > summary i{margin-left:auto; width:9px; height:9px; border-right:2px solid var(--ink-3); border-bottom:2px solid var(--ink-3); transform:rotate(45deg); transition:transform .2s}
+.g-acc[open] > summary i{transform:rotate(-135deg)}
+.g-acc > .gallery{padding:0 18px 18px}
+
+.pt-head{display:flex; align-items:center; gap:10px; font-size:16px; font-weight:800; margin:22px 0 12px}
+.pt-head span{display:inline-grid; place-items:center; width:24px; height:24px; border-radius:6px; background:var(--accent-soft); color:var(--accent-ink); font-size:13px}
+.pt-d{margin:0; font-size:14.5px; line-height:1.7; color:var(--ink-2)}
+
+.ph-kv{display:grid; grid-template-columns:auto 1fr; gap:4px 12px; margin:10px 0 0; font-size:14px}
+.ph-kv dt{font-weight:700; color:var(--ink-2)} .ph-kv dd{margin:0; color:var(--ink-2)}
+.ph-sub{margin:10px 0 2px; font-size:13px; font-weight:700; color:var(--ink-2)}
+
+.ctas .btn{justify-content:center; min-width:0; flex:none; padding-left:14px; padding-right:14px; white-space:nowrap}
+@media (min-width:1024px) and (max-width:1179px){.ctas{display:grid; grid-template-columns:repeat(2,minmax(0,220px))}}
+@media (max-width:640px){.ctas{display:grid; grid-template-columns:1fr 1fr; gap:8px}.ctas .btn{min-width:0; padding:12px 10px}}
+
+.menu-btn{display:none}
+.m-menu{display:none}
+@media (max-width:767px){
+  .menu-btn{display:inline-grid}
+  .m-menu:not([hidden]){display:flex; flex-direction:column; padding:8px 20px 16px; border-top:1px solid var(--line); background:var(--nav-bg)}
+  .m-menu a{padding:13px 4px; font-size:15px; font-weight:600; color:var(--ink); text-decoration:none; border-bottom:1px solid var(--line)}
+  .m-menu a:last-child{border-bottom:0}
+  .m-menu a.m-contact{margin-top:10px; text-align:center; border-radius:8px; background:var(--primary); color:var(--on-primary); border:0}
+}
+
+.dl.dl-stack{display:block}
+.dl.dl-stack dt{margin:18px 0 8px; font-size:13px; font-weight:700; color:var(--ink-2)}
+.dl.dl-stack dt:first-child{margin-top:10px}
+.dl.dl-stack dd{margin:0}
+.dl.dl-stack dd ul{margin:0; padding-left:18px}
+
+.pgroup > summary{list-style:none; cursor:pointer}
+.pgroup > summary::-webkit-details-marker{display:none}
+.pgroup > summary:focus-visible{outline:2px solid var(--accent); outline-offset:4px; border-radius:4px}
+.pgroup > summary i{margin-left:auto; width:9px; height:9px; border-right:2px solid var(--ink-3); border-bottom:2px solid var(--ink-3); transform:rotate(45deg); transition:transform .2s}
+.pgroup[open] > summary i{transform:rotate(-135deg)}
+.pgroup:not([open]) > summary{margin-bottom:0}
+@media (max-width:767px){.pgroups{gap:20px}}
+
+.jlist > summary{display:none}
+@media (max-width:767px){
+  .jlist > summary{display:flex; align-items:center; gap:8px; list-style:none; cursor:pointer; font-size:13.5px; font-weight:700; color:var(--accent-ink); padding:10px 12px; margin-top:4px; border-radius:6px; background:var(--surface-2)}
+  .jlist > summary::-webkit-details-marker{display:none}
+  .jlist > summary i{margin-left:auto; width:8px; height:8px; border-right:2px solid currentColor; border-bottom:2px solid currentColor; transform:rotate(45deg); transition:transform .2s}
+  .jlist[open] > summary i{transform:rotate(-135deg)}
+  .jlist[open] > summary{margin-bottom:6px}
+}
+
+.d-body .wrap > .d-main{grid-column:1; grid-row:1}
+.d-body .wrap > .side{grid-column:2; grid-row:1 / span 2}
+.d-body .wrap > .d-out{grid-column:1; grid-row:2}
+@media (max-width:900px){.d-body .wrap > .d-main,.d-body .wrap > .side,.d-body .wrap > .d-out{grid-column:1; grid-row:auto}}
+
+.d-main > .d-sec:last-child{margin-bottom:0}
+@media (max-width:900px){.d-body .wrap{row-gap:20px} .d-main > .d-sec:last-child{padding-bottom:0}}
+
+.case[data-case]{cursor:pointer; transition:border-color .15s, box-shadow .15s}
+.case[data-case]:hover{border-color:var(--accent); box-shadow:var(--shadow-2, 0 8px 24px rgba(11,25,44,.08))}
+
+.chip.key{background:var(--primary); color:var(--on-primary); border-color:var(--primary); font-weight:700}
+
+.job li .go{background:none; padding:0; width:24px; height:24px; justify-content:center; color:var(--ink-3)}
+.job li .go svg{width:18px; height:18px}
+.job li button:hover .go{color:var(--accent)}
+.job li .go-none{width:24px}
+.job li .go{align-self:center}
+@media (max-width:1023px){.job li button{position:relative; padding-right:36px} .job li .go{position:absolute; right:6px; top:50%; transform:translateY(-50%)} .job li .go-none{display:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><svg class="mark" viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22"/><path transform="translate(21.69 71.66) scale(0.05708 -0.05708)" d="M121 766C165 687 210 583 225 518L342 565C325 632 275 731 230 807ZM769 814C743 734 695 630 654 563L758 523C801 585 852 682 896 771ZM435 850V483H49V370H294C280 205 254 83 23 14C50 -10 83 -59 96 -91C360 -2 405 159 423 370H565V67C565 -49 594 -86 707 -86C728 -86 804 -86 827 -86C926 -86 957 -39 969 136C937 144 885 165 859 185C855 48 849 26 816 26C798 26 739 26 724 26C692 26 686 32 686 68V370H953V483H557V850Z"/></svg><div><b>김광원</b><span>Service Planner · PM</span></div></a>
+    <nav class="pills" aria-label="섹션 이동">
+      <a href="#top" class="on">소개</a>
+      <a href="#principles" class="opt">일하는 방식</a>
+      <a href="#cases">대표 프로젝트</a>
+      <a href="#career">경력</a>
+      <a href="#projects">전체 프로젝트</a>
+      <a href="#contact">연락처</a>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="화이트 / 다크 모드 전환">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mMenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <nav class="m-menu" id="mMenu" aria-label="모바일 메뉴" hidden>
+    <a href="#top">소개</a>
+    <a href="#principles">일하는 방식</a>
+    <a href="#cases">대표 프로젝트</a>
+    <a href="#career">경력</a>
+    <a href="#projects">전체 프로젝트</a>
+    <a href="#contact">연락처</a>
+    <a class="m-contact" href="files/resume.pdf" download="김광원_이력서.pdf" data-dl>이력서 다운로드 (PDF)</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <div class="m-profile">
+          <div class="m-photo"><img src="img/avatar.jpg" alt="김광원 프로필 사진" width="96" height="96"><span class="m-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></span></div>
+          <div class="m-info">
+            <div class="m-top"><span class="lbl">Service Planner · PM</span><span class="m-yrs"><span class="dot"></span>15+ yrs</span></div>
+            <div class="m-name">김광원 <span>(Kim Kwang-won)</span></div>
+            <div class="m-sub">구축부터 운영까지 · Web · App · Admin</div>
+          </div>
+        </div>
+        <div class="badge-row">
+          <span class="badge"><span class="dot"></span>Service Planner · PM · 15+ yrs</span>
+          
+        </div>
+        <h1>다양한 프로젝트 경험을 바탕으로<br><em>구축부터 운영까지</em> 책임지는 기획자</h1>
+        <p class="lede">2009년 UI 디자이너로 시작해 서비스 기획으로 전향했습니다. 에이전시에서 PC·태블릿·모바일·키오스크 서비스를 처음부터 설계했고, 스타트업 프로덕트 팀장과 메디컬 AI 플랫폼 PM을 거쳐 지금은 SKT 'T Factory 성수'의 Web · Admin · QR Web을 구축하고 운영합니다.</p>
+        <div class="hashtags"><span>#서비스기획</span><span>#UX/UI설계</span><span>#화면설계서</span><span>#구축과운영</span><span>#QA·출시관리</span></div>
+        <div class="ctas">
+          <a class="btn btn-primary" href="#cases"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>대표 프로젝트 보기</a>
+          <a class="btn btn-secondary" href="#career"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg>경력 살펴보기</a>
+          <button class="btn btn-secondary" type="button" data-letter><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg>자기소개서 보기</button>
+          <a class="btn btn-secondary" href="files/resume.pdf" download="김광원_이력서.pdf" data-dl><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>이력서 다운로드</a>
+        </div>
+      </div>
+      <div class="visual">
+        <div class="photo-card">
+          <div class="photo-wrap">
+            <img src="img/profile.jpg" alt="김광원 프로필 사진" width="920" height="728">
+            <span class="name-chip"><span class="dot"></span>Kim Kwang-won (김광원)</span>
+          </div>
+          <div class="photo-stats">
+            <div><span class="lbl">Career</span><b>15년+</b><span>서비스 기획 경력</span></div>
+            <div><span class="lbl">Projects</span><b id="heroProjects">26+</b><span>기획 · 설계 프로젝트</span></div>
+          </div>
+          <div class="now-card">
+          <span class="lbl">Now · 재직 중</span>
+          <b>SKT T Factory 성수</b>
+          <p>Web · Admin · QR Web 구축 → 운영</p>
+          <div class="progress"><span></span></div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="metrics">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="lbl">Career at a glance</span><h2>한눈에 보는 경력 지표</h2></div>
+        <p class="desc">이력서와 포트폴리오에 정리된 재직 기간, 프로젝트, 참여도 기록을 그대로 계산한 숫자입니다.</p>
+      </div>
+      <div class="metrics" id="metricsGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="principles">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="lbl"><span class="dot"></span>How I work</span><h2>일하는 방식, 3가지 원칙</h2></div>
+        <p class="desc">에이전시와 스타트업을 오가며 지켜 온 기준입니다. 듣고, 함께 만들고, 데이터로 고칩니다.</p>
+      </div>
+      <div class="principles">
+        <div class="principle">
+          <div class="top"><span class="tag">01 / LISTEN</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+          <h3>먼저 듣고, 의도를 정확히</h3>
+          <div class="sub">요청 뒤에 있는 진짜 의도를 파악해 빠르게 대응합니다.</div>
+          <p>다른 사람의 의견을 충분히 듣고 그 안에서 바라는 바를 정확히 파악합니다. SI 프로젝트에서 클라이언트 니즈를 읽고 솔루션을 제시해 온 경험이 바탕입니다.</p>
+          <div class="practice"><span class="lbl">Key practice</span><b>요구사항 접수 · 기능 분석 및 제안 · 요건 정의</b></div>
+        </div>
+        <div class="principle">
+          <div class="top"><span class="tag">02 / TEAM</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+          <h3>동료를 First User로</h3>
+          <div class="sub">함께 만드는 사람의 전문성을 존중하고 의견을 깊게 수렴합니다.</div>
+          <p>기획·디자인·개발·CX 각 포지션 담당자를 첫 번째 사용자로 여기고, 그들의 의견을 화면과 정책에 반영합니다.</p>
+          <div class="practice"><span class="lbl">Key practice</span><b>디자인 검수 · 개발 일정 관리 · QA 협업</b></div>
+        </div>
+        <div class="principle">
+          <div class="top"><span class="tag">03 / IMPROVE</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/></svg></div>
+          <h3>데이터로 찾고, 빠르게 반영</h3>
+          <div class="sub">사용자 데이터로 니즈를 확인하고 개선점을 빠르게 반영합니다.</div>
+          <p>출시가 끝이 아니라 운영의 시작이라고 봅니다. 운영 데이터와 사용자 반응에서 개선점을 찾아 다음 고도화로 이어 갑니다.</p>
+          <div class="practice"><span class="lbl">Key practice</span><b>운영 데이터 확인 · 고도화 기획 · 출시 관리</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="cases">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="lbl">Selected projects</span><h2>대표 프로젝트</h2></div>
+        <p class="desc small">Product → Role → Contribution</p>
+      </div>
+      <div class="cases" id="casesList"></div>
+    </div>
+  </section>
+
+  <section class="section" id="career">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="lbl">Work experience</span><h2>경력</h2></div>
+        <p class="desc">진행한 프로젝트를 모두 담았습니다. <span class="legend">›</span> 표시가 있는 항목은 누르면 상세 페이지가 열립니다.</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <section class="section alt" id="projects">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="lbl">All projects</span><h2>전체 프로젝트</h2></div>
+        <p class="desc">유형, 업무로 걸러 볼 수 있습니다.</p>
+      </div>
+      <div class="filters" role="group" aria-label="프로젝트 필터">
+        <div class="fgroup" id="fType"><span class="lbl">유형</span></div>
+        <div class="fgroup" id="fWork"><span class="lbl">업무</span></div>
+        <span class="count" id="count"></span>
+      </div>
+      <div id="grid" class="pgroups"></div>
+    </div>
+  </section>
+
+  <section class="section" id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="lbl">Delivery process</span><h2>실무 기획 프로세스</h2></div>
+        <p class="desc small">분석 → 설계 → 검수 → 운영</p>
+      </div>
+      <div class="process">
+        <div class="phase"><div class="top"><span class="lbl">Phase 01</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div><h3>분석 · 정의</h3><ul><li>요구사항 접수와 현황 분석</li><li>기능 정의 및 제안</li><li>요건 정의서 정리</li></ul></div>
+        <div class="phase"><div class="top"><span class="lbl">Phase 02</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div><h3>UX/UI 설계</h3><ul><li>IA · 서비스 스트럭처</li><li>키 스크린 제안</li><li>화면설계서 작성</li></ul></div>
+        <div class="phase"><div class="top"><span class="lbl">Phase 03</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>검수 · QA</h3><ul><li>디자인 검수</li><li>개발 일정 관리</li><li>QA 및 출시 관리</li></ul></div>
+        <div class="phase"><div class="top"><span class="lbl">Phase 04</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/></svg></div><h3>운영 · 고도화</h3><ul><li>서비스 운영과 개선</li><li>고도화 기획</li><li>사용자 매뉴얼 작성</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="skills">
+    <div class="wrap">
+      <div class="sec-head"><div><span class="lbl">Skill &amp; education</span><h2>스킬 · 학력</h2></div></div>
+      <div class="skills">
+        <div class="box">
+          <span class="lbl">Skill</span>
+          <dl class="dl dl-stack">
+            <dt>Communication</dt>
+            <dd><ul><li>직위나 위치에 관계없이 겸손함을 지킵니다.</li><li>평소에는 재치 있게, 업무에서는 논리 있게 전달합니다.</li><li>먼저 경청하는 것이 좋은 커뮤니케이션이라고 믿습니다.</li></ul></dd>
+            <dt>Tool</dt>
+            <dd class="chips"><span class="chip">Figma</span><span class="chip">Jira</span><span class="chip">Confluence</span><span class="chip">Notion</span><span class="chip">MS Office</span></dd>
+            <dt>산출물</dt>
+            <dd class="chips"><span class="chip blue">요건 정의</span><span class="chip blue">IA · 스트럭처</span><span class="chip blue">화면설계서</span><span class="chip blue">와이어프레임 템플릿</span><span class="chip blue">QA</span><span class="chip blue">사용자 매뉴얼</span></dd>
+          </dl>
+        </div>
+        <div class="box">
+          <span class="lbl">Education</span>
+          <div class="edu">
+            <div><div class="yr">2000.03 – 2008.02</div><b>경기대학교</b> · 시각정보디자인</div>
+            <div><div class="yr">1997.03 – 2000.02</div><b>경동고등학교</b> · 인문계</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-wrap" id="contact">
+    <div class="wrap">
+      <div class="cta">
+        <div>
+          <span class="lbl"><span class="dot"></span>새로운 기회를 찾고 있습니다</span>
+          <h2>검토해 주셔서 감사합니다.<br>함께 더 나은 프로덕트를 만들고 싶습니다.</h2>
+          <p>구축부터 운영까지, 서비스가 오픈 이후에도 잘 굴러가도록 책임지는 기획자로 함께하겠습니다.</p>
+        </div>
+        <div class="cta-actions">
+          <div class="line">EMAIL : <a href="mailto:kwony012@naver.com">kwony012@naver.com</a><button class="copy" type="button" data-copy="kwony012@naver.com">복사</button></div>
+          <div class="line">PHONE : <a href="tel:01031206365">010.3120.6365</a><button class="copy" type="button" data-copy="010-3120-6365">복사</button></div>
+          <a class="btn btn-light btn-ghost-w dl-cta" href="files/resume.pdf" download="김광원_이력서.pdf" data-dl><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>이력서 다운로드</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><b>김광원 · Service Planner · PM</b><p style="margin:0;max-width:44ch">2009년부터 에이전시, 스타트업, 메디컬 AI 기업에서 웹·앱·관리자 서비스를 기획하고 운영해 왔습니다.</p></div>
+      <div><span class="lbl">Contact</span><ul><li><a href="mailto:kwony012@naver.com">kwony012@naver.com</a></li><li><a href="tel:01031206365">010.3120.6365</a></li></ul></div>
+      <div><span class="lbl">Navigation</span><ul><li><a href="#metrics">경력 지표</a></li><li><a href="#cases">대표 프로젝트</a></li><li><a href="#career">경력</a></li><li><a href="#projects">전체 프로젝트</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 김광원 · 2026.11 업데이트</span><span>Resume &amp; Portfolio</span></div>
+  </div>
+</footer>
+
+<!-- 프로젝트 상세 페이지 -->
+<div class="detail" id="detail" role="dialog" aria-modal="true" aria-labelledby="dTitle">
+  <div class="d-bar"><div class="wrap">
+    <button class="btn btn-secondary" type="button" id="dBack"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>전체 프로젝트</button>
+    <span class="crumb" id="dCrumb"></span>
+    <span class="sp"></span>
+    <button class="icon-btn" type="button" id="dPrev" aria-label="이전 프로젝트"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+    <button class="icon-btn" type="button" id="dNext" aria-label="다음 프로젝트"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+  </div></div>
+  <div id="dContent"></div>
+</div>
+
+<!-- 자기소개서 -->
+<div class="detail" id="letter" role="dialog" aria-modal="true" aria-labelledby="lTitle">
+  <div class="d-bar"><div class="wrap">
+    <button class="btn btn-secondary" type="button" id="lBack"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>돌아가기</button>
+    <span class="crumb">김광원 · <b>자기소개서</b></span>
+  </div></div>
+  <article class="letter">
+    <div class="wrap">
+      <span class="lbl" style="color:var(--accent)">Introduce</span>
+      <h1 id="lTitle">자기소개서</h1>
+      <p class="l-meta">김광원 · 서비스 기획 · PM · 2026.11</p>
+      <div class="l-body" id="lBody">
+        <section><span class="l-tag">시작</span><div>
+          <p class="l-lead">구축에서 끝내지 않고, 오픈 이후의 운영까지 책임지는 서비스 기획자 김광원입니다.</p>
+          <p>2009년 UI 디자이너로 IT 업계에 들어와 1년 뒤 서비스 기획으로 전향했고, 15년 넘게 에이전시와 스타트업, 메디컬 AI 회사에서 서비스를 기획해 왔습니다.</p>
+        </div></section>
+        <section><span class="l-tag">에이전시</span><div>
+          <p>새로운 서비스를 처음부터 기획해 런칭하는 일에 끌려 주로 에이전시에서 일했습니다. 그 덕분에 PC, 태블릿, 모바일, 키오스크까지 여러 디바이스의 Web과 App을 설계했습니다. 특히 보너스 플러스는 씨앗 플러스로 이어지며, 한 서비스가 버전을 거듭해 자라는 과정을 처음 깊이 경험하게 해 준 프로젝트입니다.</p>
+        </div></section>
+        <section><span class="l-tag">스타트업 · 메디컬 AI</span><div>
+          <p>런칭 이후에도 서비스를 직접 키워 보고 싶어 2021년 2월 친환경 MaaS 플랫폼 '네이버스'를 만드는 스타트업에 합류했습니다. 기획·디자인·CX 파트로 구성된 프로덕트 팀을 이끌며 운영 중인 서비스의 신규 기능을 기획했고, 개발팀과 QA를 거쳐 출시까지 관리했습니다. 네이버스 2.5에서는 Android 앱으로만 운영하던 서비스에 iOS 앱을 새로 만들어 출시했습니다.</p>
+          <p>2024년에는 외과 수술용 AI 내비게이션을 개발하는 메디컬 회사에서 플랫폼 PM으로 일했습니다. 운영 중인 RUS Platform(Portal · Cloud · Recon.) 세 프로덕트의 버전 업데이트를 기획하고, 개발 일정과 출시를 관리했습니다. 운영하는 동안에는 플랫폼 전체의 문서 템플릿도 새로 정리했습니다.</p>
+        </div></section>
+        <section><span class="l-tag">지금</span><div>
+          <p>지금은 모바일웍스코리아에서 SKT 'T Factory 성수'의 Web · Admin · QR Web을 제안부터 구축까지 맡았고, 오픈 이후의 운영도 이어서 담당하고 있습니다. 다시 에이전시로 왔지만 일하는 기준은 달라졌습니다. 서비스를 직접 운영해 본 경험이 있기에, 클라이언트의 서비스도 오픈일이 아니라 운영 이후를 기준으로 설계합니다.</p>
+        </div></section>
+        <section><span class="l-tag">일하는 방식</span><div>
+          <p>저의 강점은 듣는 데서 시작합니다. 클라이언트와 팀원의 말 속에서 진짜 의도를 찾아내고, 그에 맞는 해법을 빠르게 제시합니다. 수많은 SI 프로젝트에서 클라이언트의 니즈를 정확히 짚어야 했던 경험이 이 습관을 만들었습니다.</p>
+          <p>또한 함께 만드는 디자이너, 개발자, QA를 서비스의 첫 번째 사용자(First User)로 여기고, 각자의 전문성에서 나온 의견을 기획에 적극 반영합니다.</p>
+        </div></section>
+        <section><span class="l-tag">다짐</span><div>
+          <p>사용자의 반응에서 문제를 찾고, 팀과 빠르게 소통해 개선을 반영하는 것을 가장 중요하게 여기겠습니다. 오픈 이후에도 서비스가 계속 나아지도록 끝까지 책임지는 기획자가 되겠습니다.</p>
+          <p class="l-sign">감사합니다.<br><b>김광원</b></p>
+        </div></section>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="이미지 크게 보기">
+  <div class="lb-bar"><span id="lbCount"></span><span class="sp"></span><button type="button" id="lbPrev">이전</button><button type="button" id="lbNext">다음</button><button type="button" id="lbClose">닫기</button></div>
+  <div class="lb-stage" id="lbStage"><img id="lbImg" alt=""></div>
+</div>
+
+<script>
+const PROJECTS = [
+  // 모바일웍스 (현재)
+  {id:"tfactory", co:"mwk-now", title:"T Factory 성수", sub:"Web · Admin · QR Web", client:"SK텔레콤", start:"2025-04", end:"", type:["Web","Admin","Mobile Web"], os:"Web · Admin · QR Web", work:["신규","운영 및 개선"],
+   intro:"SKT의 오프라인 체험 공간 'T Factory 성수'의 서비스입니다. 고객용 Web, 운영을 위한 Admin, 현장에서 QR로 여는 QR Web으로 구성되며, 현장을 방문한 고객에게 온·오프라인이 이어지는 O2O 경험을 주는 것이 목적입니다.",
+   role:"제안 단계부터 참여해 SKT, SK쉴더스 등 여러 협력사와 함께 서비스 정책과 화면을 정의하고 Web · Admin · QR Web의 UX/UI를 설계했습니다. 특히 Admin은 정보구조부터 화면설계서(v1.2.1, 560여 페이지)까지 거의 단독으로 기획하고 작성했습니다. 2025년 9월 오픈 이후에는 같은 세 서비스의 운영과 개선을 이어서 맡고 있습니다.",
+   phases:[
+     {label:"구축 · Web · Admin · QR Web", start:"2025-04", end:"2025-09", tasks:["제안 작업과 키 스크린 설계, 고객사 피드백 반영","T ID · 카카오 계정 연동 회원가입 정책 정리","T Factory 자체 약관 관리 체계 정의","방문 예약 · 응모 상태와 취소 처리 프로세스 설계","Web · Admin · QR Web 화면설계서 작성"], tags:["신규"]},
+     {label:"운영 · Web · Admin · QR Web", start:"2025-09", end:"", tasks:["오픈 이후 Web · Admin · QR Web 서비스 운영 및 개선","회원가입 · 방문 예약 · 응모 서비스 운영","Admin 만족도 / 설문 조사 관리 메뉴 설계 (2025.09)","Admin 대시보드 · AI 냉난방 / 안전 / 전력 관리 · 크루 관리 메뉴 추가 (2025.11)","웨이팅 모니터링 메뉴 설계 (2025.12)","스토어 관리 > SEED VAULT 26 메뉴 추가 (2026.10)"], tags:["운영 및 개선"]}
+   ],
+   tasks:[], key:true,
+   pct:{a:30,u:70,s:70,o:80}, pctNote:"화면설계서: Admin 100 · Web 50 · QR Web 30 (Admin 472장 · Web 158장 · QR Web 45장)", link:"https://www.tfactory.co.kr/",
+   highlight:"프로그램이나 이벤트마다 웹 페이지를 새로 만들어야 했던 운영 방식을, Admin에서 등록 · 수정하면 바로 반영되도록 시스템화했습니다. 그 Admin을 정보구조부터 화면설계서까지 거의 단독으로 기획했고, 쌓인 데이터는 대시보드와 회원 이력으로 한눈에 읽히도록 설계했습니다.",
+   impactTitle:"구축 핵심 개선", improvements:[{"title": "프로그램 · 이벤트 페이지 운영의 시스템화", "before": "프로그램이나 이벤트 페이지 하나를 열려면 웹 페이지를 새로 제작해야 해서 오픈까지 오래 걸렸고, 글자 하나를 고쳐도 페이지를 다시 올려야 했습니다.", "after": "프로그램 · 이벤트, 배너 · 팝업, 공지를 Admin에서 등록 · 수정하면 Web에 바로 반영되도록 시스템화했습니다. 에디터와 모바일 · PC 미리보기, 게시 기간 설정으로 운영자가 직접 열고 고칩니다.", "where": "Admin › 프로그램 등록 · 수정 · 홈 메인 배너 · 배너 / 팝업 · 공지사항"}],
+   points:{"lead": "Admin은 운영자가 매일 쓰는 도구라서 두 가지 기준으로 설계했습니다. 하나는 Admin에서 입력한 내용이 프론트 화면과 현장 운영으로 그대로 이어지는 것, 다른 하나는 쌓이는 데이터를 운영자가 한눈에 읽고 바로 판단할 수 있는 것입니다.", "groups": [{"title": "프론트와 이어지는 운영", "items": [{"t": "페이지 제작 없이 여는 프로그램", "d": "프로그램 · 이벤트를 웹 페이지 제작 없이 Admin에서 등록하도록 하고, 등록 항목을 Web 상세 화면의 구성 요소와 맞췄습니다. 모바일 · PC 미리보기로 게시 전에 실제 화면을 확인합니다.", "w": "프로그램 등록 · 프로그램 상세"}, {"t": "Admin에서 운영하는 홈 화면", "d": "홈 메인 배너, 배너 / 팝업, 공지사항을 Admin에서 등록하고 노출 영역과 기간을 정해, 개발 배포 없이 프론트 홈을 운영할 수 있게 했습니다.", "w": "홈 메인 배너 · 배너 / 팝업 · 공지사항"}, {"t": "현장 QR과 Admin의 연결", "d": "QR Web에서 처리한 체험 인증과 웨이팅이 Admin의 회원 이력과 웨이팅 모니터링으로 쌓이도록 흐름을 맞췄습니다. 현장은 당일 데이터, Admin은 누적 데이터를 봅니다.", "w": "QR Web · 웨이팅 모니터링 · 회원 상세"}, {"t": "운영 처리와 고객 안내를 한 번에", "d": "당첨자 선정, 웨이팅 호출 · 취소 같은 운영 처리와 동시에 안내 MMS가 발송되도록 설계해, 운영자가 고객에게 따로 연락하지 않아도 되게 했습니다.", "w": "당첨자 선정 · MMS 발송 관리"}]}, {"title": "쌓인 데이터를 한눈에", "items": [{"t": "주제별 대시보드", "d": "방문자, 웹 접속, 프로그램, 드로우 투어, 라운지, 만족도 조사를 탭으로 나누고, 전일 · 전주 · 전월 · 당월 버튼으로 기간을 바로 바꿔 비교하도록 했습니다.", "w": "대시보드"}, {"t": "회원 한 명의 전체 이력", "d": "웹 접속, 방문, 프로그램 참여, 드로우 투어, 만족도 조사, 1:1 문의, 굿즈 수령 이력을 회원 상세 탭에 모아, 고객 응대 중에 여러 메뉴를 오가지 않게 했습니다.", "w": "회원 관리 · 회원 상세"}, {"t": "차트와 표를 오가는 결과 보기", "d": "만족도 조사 응답을 문항별 차트와 표로 바꿔 보고, 응답일 기준 조회와 파일 다운로드로 보고서 작업까지 이어지게 했습니다.", "w": "만족도 / 설문 조사 · 응답 결과"}, {"t": "개인정보를 지키며 보는 데이터", "d": "회원 목록 · 상세 · 다운로드 전반에 마스킹 기준을 적용하고, 개인정보 보호 표시와 별도 다운로드 절차로 필요한 때에만 원본을 보도록 했습니다.", "w": "개인정보 보호 · 마스킹 정책"}]}]}},
+  {id:"avis", co:"mwk-now", title:"SK On AVIS 고도화", sub:"", client:"SK On", start:"2025-01", end:"2025-05", type:["Web","Admin"], work:["운영 및 개선","고도화"],
+   intro:"SK On 생산 현장의 품질 이미지 데이터를 다루는 AVIS 시스템과, 이를 조회·관리하는 VISS Web 서비스입니다. 글로벌 사이트로 횡전개하기 위해 실시간 품질 데이터를 확보하고 글로벌 생산 현장의 품질 수준을 표준화하는 것을 목표로 고도화했습니다.",
+   role:"SK On 현업, 개발사(엔텔스)와 주간 보고 회의를 운영하며 AVIS 고도화 요구사항을 정리하고 VISS Web 화면에 반영했습니다. 고도화 과제 중 사용자 편의(User-friendly) 영역을 중심으로 참여해 일일 · 주간 보고서의 초기 기획안을 정리했고, 고도화 결과는 현업 사용자를 위한 안내 자료로 요약했습니다.",
+   improvements:[
+     {title:"실시간 이미지 확인", before:"이미지 생성 후 2시간이 지나야 MES에서 확인 가능", after:"이미지 생성 후 5분 이내 VISS Web에서 확인", where:"VISS Web"},
+     {title:"이미지 저장 내역 일일 보고서", before:"이미지 저장 내역의 일일 정보 확인 불가", after:"라인별 저장 건수와 업로드 실패 건수를 일일 보고서 메일로 수신", where:"VISS Web › Data List", mine:"초기 기획"},
+     {title:"이미지 저장 누락 방지", before:"파일 사이즈 이상과 세트 누락을 감지하기 어려움", after:"이미지 파일 사이즈와 세트 누락을 자동 체크", where:"VISS Web › Manager › Meta Work Error"},
+     {title:"대용량 이미지 추출", before:"MES UI에서 1회 200개까지만 다운로드", after:"VISS Web에서 최대 50GB까지 다운로드", where:"VISS Web › Data List › Bulk File Extraction"}
+   ],
+   tasks:["Web 통계 메뉴 기획 및 리뷰","데이터 리스트 검색 필터 개선","대시보드 개편 방향 정리","일일 · 주간 보고서 초기 기획안 정리","주간 보고 회의 운영 및 Action Item 관리","AVIS 고도화 안내 자료 요약 정리 (v0.1, 2025.05)"],},
+  {id:"mocean", co:"mwk-now", title:"현대자동차 MOCEAN CARSHARING", sub:"Mobile App · Admin", client:"(주)현대자동차", start:"2024-09", end:"2024-12", type:["Mobile App","Admin"], os:"Mobile App · Admin", work:["운영 및 개선"],
+   intro:"현대자동차의 카셰어링 서비스 MOCEAN CARSHARING입니다. 고객용 Mobile App과 운영을 위한 Admin으로 구성됩니다.",
+   role:"모바일웍스코리아 입사 후 약 4개월간 단기 운영을 맡아, 운영 중 나온 개선 요청 9건을 정리하고 각각 Mobile App(프론트)과 Admin 화면 · 정책을 기획했습니다.",
+   tasks:["스테이션 검색 기능 개선", "스테이션 운영시간 안내", "반납시간 연장", "대여 및 반납일시 기본 세팅", "장기 시승 상품", "쿠폰 정책", "특정 유저 및 거점 기준 스테이션 노출", "앱 내 예약시간 변경 기능", "앱 내 차량 잠금 화면 문구 추가"], key:false},
+  // 휴톰
+  {id:"rus-platform", co:"huton", title:"RUS Platform", sub:"Portal · Cloud · Recon", client:"(주)휴톰", start:"2024-01", end:"2024-07", type:["Web"], work:["고도화"],
+   intro:"외과 수술용 AI 내비게이션을 개발하는 휴톰의 데이터 플랫폼입니다. 병원의 CT 데이터를 휴톰으로 보내고 3D 결과를 받는 RUS Portal, 병원 · 계정 · 파일 전송 · Credit을 관리하는 RUS Cloud, 전송된 CT를 AI로 처리해 3D로 변환 · 검수하는 내부용 RUS Recon.으로 구성됩니다.",
+   role:"RUS Portal v1.1.1, RUS Cloud v1.1.1, RUS Recon. v1.1.0의 요건 정의와 신규 기능 기획, 화면설계서 작성을 맡았고, RUS Portal과 RUS Cloud는 일정 · 출시 관리까지, RUS Portal은 사용자 매뉴얼 작성까지 진행했습니다. 개발 일정과 진행 상황을 관리하며 개발 · 내부 담당자들과 요건을 협의했고, 운영하면서 플랫폼 전체의 Wireframe · 문서 템플릿을 새로 정리했습니다.",
+   phases:[{"label": "RUS Portal v1.1.1", "start": "2024-01", "end": "2024-07", "desc": "병원의 CT 데이터를 휴톰으로 전송하고, 전송된 CT로 제작된 3D를 받아 RUS Client에서 사용할 수 있도록 하는 프로덕트", "work": "요건 정의, 신규 기능 기획 및 설계서 작성, 일정 및 출시 관리, 사용자 매뉴얼 작성", "tasks": ["다국어 지원 기획 및 정리 (한국어, 일본어)", "RUS Registration 등록 기능 개선 및 정보 수정 기능 추가", "전체 Wireframe 템플릿 정리 및 작성"]}, {"label": "RUS Cloud v1.1.1", "start": "2024-01", "end": "2024-07", "desc": "병원에 설치된 RUS Portal IP 등록 및 대표 계정 생성, hu3D 제작 요청된 huCT 및 작업 파일 전송 관리, 병원별 Credit 부여 등을 관리하는 프로덕트", "work": "요건 정의, 신규 기능 기획 및 설계서 작성, 일정 및 출시 관리", "tasks": ["RUS Test Case 분기 기능", "RUS Client 및 RUS Portal 로그 전송 메뉴 추가", "RUS Portal 다국어 지원을 위한 템플릿 기능 수정", "전체 Wireframe 템플릿 정리 및 작성"]}, {"label": "RUS Recon. v1.1.0", "start": "2024-03", "end": "2024-07", "desc": "RUS Cloud로부터 전송된 huCT 파일을 AI Inference로 처리하고, 3D 파일로 변환 및 최종 검수를 거쳐 다시 RUS Cloud로 전송하는, 휴톰 내부 담당자의 hu3D 작업을 위한 프로덕트", "work": "요건 정리, 신규 기능 기획 및 설계서 작성", "tasks": ["작업 Case 등록 기능 및 Case Card 레이아웃 개선", "Mask List 및 Series Description 관리 기능 추가", "전체 Wireframe 템플릿 정리 및 작성"]}],
+   tasks:[], key:false, pct:{a:50,u:50,s:100}, pctNote:"각 프로덕트 MMI 템플릿 변경 작업 진행"},
+  {id:"surggram", co:"huton", title:"SurgGram P.O.C", client:"(주)휴톰", start:"2024-05", end:"2024-08", type:["Web"], work:["신규"],
+   status:"사업 재검토로 보류", role:"주요 화면 정리 및 설계를 진행했습니다. P.O.C 이후 사업 방향 재검토로 프로젝트가 보류되었습니다.", tasks:[]},
+  // 네이앤컴퍼니
+  {id:"neibus-25", co:"nei", title:"네이버스 2.5", sub:"AOS · iOS App", client:"(주)네이앤컴퍼니", start:"2022-01", end:"2023-10", type:["Mobile App"], os:"Android · iOS", work:["신규","운영 및 개선","고도화"],
+   intro:"국내 최초로 대중교통 탑승 시간을 측정해 리워드를 지급하고, 지하철·버스 정보와 챌린지, 친환경 활동 지수를 제공하는 서비스입니다. Android 앱으로 서비스하다가, 2.5 개편과 함께 iOS 앱을 새로 만들어 출시했습니다.",
+   role:"대중교통 리워드 서비스에서 '친환경 MaaS 플랫폼'으로 도약하기 위해 UI 개편과 기능 고도화를 진행했습니다. 홈 화면을 리뉴얼하고 새로 추가되는 기능의 전체 UX/UI 설계, 디자인 검수, 일정 관리를 맡았으며, 개발 완료 후 QA를 담당했습니다. 이후에도 서비스 운영과 고도화를 이어갔습니다.",
+   phases:[
+     {label:"AOS App · 2.5 개편과 고도화", start:"2022-01", end:"2023-10", desc:"기존 Android 앱을 2.5로 개편했습니다. 홈 화면 리뉴얼과 신규 기능의 UX/UI 설계, 디자인 검수, QA를 맡았고 이후 운영과 고도화를 이어갔습니다.", tags:["운영 및 개선","고도화"]},
+     {label:"iOS App · 신규 출시", start:"2022-07", end:"2023-10", desc:"Android 앱만 서비스하던 상황에서 iOS 앱을 새로 만들었습니다. 2019년 5월 AOS 앱 출시 후 38개월 만의 iOS 출시로, AOS 앱을 기준으로 UX/UI 설계와 디자인 검수, 일정 관리를 진행하고 개발 완료 후 QA를 담당했습니다.", tags:["신규","운영 및 개선"]}
+   ],
+   tasks:["네이버스 iOS App 신규 런칭","홈(Main) 화면 UX/UI 기획 및 개편","지하철 검색 및 길찾기 서비스 기획·운영","자체 광고 플랫폼 서비스 기획·운영","친환경 챌린지 · 친환경 통계 서비스 기획·운영","정류장 기반 리워드 서비스 기획·운영","앱 전체 화면설계서 작업"],
+   pct:{a:60,u:70,s:100}, pctNote:"AOS · iOS 동일", link:"https://play.google.com/store/apps/details?id=com.neibus", key:true},
+  {id:"neibus-admin", co:"nei", title:"네이버스 관리자 사이트", client:"(주)네이앤컴퍼니", start:"2021-02", end:"2023-10", type:["Admin"], work:["신규","운영 및 개선","고도화"],
+   intro:"네이버스의 각종 데이터 조회와 서비스 운영을 위한 관리자 사이트입니다.",
+   role:"입사 당시 관리자 사이트가 없어 모든 운영을 백엔드에서 수동으로 조회·관리하던 상황이었습니다. 필요한 기능을 정의하고 UX/UI를 설계했으며, 개발 일정 관리와 QA를 담당했습니다.",
+   tasks:["메시지 관리(PUSH & 알림) 기능 기획·운영","앱 관리(배너, 공지사항, FAQ 등) 기획·운영","광고 플랫폼 관리 기능 기획·운영","회원 및 자체 포인트, 마켓 관리 기능 기획·운영","챌린지 등록 & 검수 기능 기획·운영","CS 접수 및 관리 기능 기획·운영","통계 기능 기획"],
+   pct:{a:90,u:80,s:100}, key:true},
+  {id:"neibus-20", co:"nei", title:"네이버스 2.0", sub:"Mobile App", client:"(주)네이앤컴퍼니", start:"2021-02", end:"2022-01", type:["Mobile App"], os:"Android", work:["운영 및 개선","고도화"],
+   intro:"대중교통 정보를 제공하고, 버스 탑승 시간을 기반으로 포인트를 주는 리워드 서비스입니다.",
+   role:"프로덕트 팀장으로 앱 고도화와 서비스 운영을 진행했습니다. 개발 로드맵에 맞춰 새 기능의 UX/UI 설계, 디자인 검수, 개발 일정 관리를 맡았고 개발 완료 후 QA를 담당했습니다. 기존에 없던 화면설계서 전체와 필요한 기획 문서를 새로 정리하고 작성했습니다.",
+   tasks:[], pct:{a:50,u:60,s:100}},
+  // 모바일웍스 프리랜서
+  {id:"mintit", co:"mwk-f", title:"민팃", sub:"중고폰 거래 플랫폼", client:"SK 네트웍스 서비스", start:"2020-10", end:"2021-01", type:["Mobile Web"], work:["리뉴얼"],
+   intro:"SK네트웍스의 중고폰 거래 플랫폼 민팃의 모바일 웹 리뉴얼입니다. 시세조회부터 ATM · 바로 픽업 판매, 중고폰 구매, 마이페이지까지 판매와 구매를 한 서비스로 이었습니다.",
+   role:"중고폰 거래 플랫폼 민팃의 서비스 리뉴얼 프로젝트입니다. 바른폰과 민팃의 중고폰 거래 서비스를 통합하면서 모바일 UX/UI 설계를 진행했습니다.",
+   tasks:["메뉴구조 · 화면목록 정의","시세조회 · 검사 후 판매 · 바로 픽업 판매 흐름 설계","중고폰 구매 · 타임딜 · 결제 화면 설계","마이페이지 판매 · 구매 내역 설계"], pct:{a:30,u:30,s:100}},
+  {id:"hkey-life", co:"mwk-f", title:"현대자동차 디지털 키", sub:"키 & 라이프 서비스", client:"(주)현대자동차", start:"2020-09", end:"2020-10", type:["Mobile App"], os:"Android", work:["고도화"],
+   role:"'키 & 라이프 서비스' 중 픽업앤세차, 쇼핑포터, 이벤트(산타포터)의 UX/UI 설계를 진행했습니다. 뉴비즈 파트너스(가칭) 프로젝트를 위한 주요 화면과 대리 & 탁송 UX/UI 설계는 100% 담당했습니다.",
+   tasks:[], pct:{a:30,u:50,s:100}, link:"https://play.google.com/store/apps/details?id=com.hyundai.digitalcarkey"},
+  // 모바일웍스 차장
+  {id:"castpick", co:"mwk-2", title:"캐스트픽", sub:"온라인 배우 캐스팅 서비스", client:"㈜씨엔에이에이전시", start:"2019-09", end:"2020-04", type:["Web","Admin"], work:["신규"],
+   role:"담당자 요구사항을 받아 전체 서비스의 기능을 분석하고 제안했으며, 협의된 기능을 토대로 웹과 관리자 사이트의 UX/UI를 설계했습니다.",
+   tasks:[], pct:{a:60,u:70,s:100}, link:"https://www.castpick.net/"},
+  {id:"barunphone", co:"mwk-2", title:"바른폰 관리자 사이트", client:"SK 텔링크", start:"2019-04", end:"2019-08", type:["Admin"], work:["리뉴얼"],
+   role:"바른폰 관리자 사이트의 UX/UI 설계와 매뉴얼 작업을 담당했습니다.", tasks:[], pct:{a:50,u:60,s:90}},
+  {id:"genesis-key", co:"mwk-2", title:"제네시스 디지털 키", client:"(주)현대자동차", start:"2019-02", end:"2019-07", type:["Mobile App"], os:"Android", work:["신규"],
+   role:"현대자동차 디지털 키 앱 프로젝트 담당자들이 다시 모여 진행한 프로젝트입니다. 초기에는 제네시스의 요건 정의서를 기준으로 제안과 디자인 시안을 위한 Key Screen 작업을 했고, 기능 확정 이후 앱 전체 UX/UI 설계를 담당했습니다.",
+   tasks:[], pct:{a:30,u:80,s:100}, link:"https://play.google.com/store/apps/details?id=com.genesis.digitalcarkey"},
+  {id:"hyundai-key", co:"mwk-2", title:"현대자동차 디지털 키", client:"(주)현대자동차", start:"2018-06", end:"2019-02", type:["Mobile App"], os:"Android", work:["신규"],
+   intro:"BLE 원격 제어로 차량의 도어, 원격 시동, 비상 경보, 트렁크 열림 등을 제어하고 스마트폰으로 디지털 키를 공유하는 서비스입니다.",
+   role:"'스마트 커넥트 App'이라는 이름으로 현대자동차 외 2개 회사가 모여 기능을 정의하는 단계부터 참여했습니다. 초기에는 전체 기능의 기본 스트럭처 설계를, 기능 확정 이후에는 앱 전체 UX/UI 설계를 담당했습니다.",
+   tasks:["BLE 통신 기반 차량 제어(출입 & 시동) 신규 시스템 구축"], pct:{a:30,u:70,s:100}, key:true},
+  {id:"castle", co:"mwk-2", title:"캐슬 스마트홈", client:"㈜롯데건설 / ㈜롯데정보통신", start:"2017-12", end:"2018-04", type:["Mobile App"], os:"Android", work:["리뉴얼"],
+   intro:"롯데캐슬 입주민에게 세대별 원격 제어(조명, 가스, 냉난방 등), 조회(택배, 방문자, 에너지 등), 보안, 생활 편의 정보를 제공하는 홈 네트워크 서비스입니다.",
+   role:"기존 '캐슬매니저 App' 고도화 프로젝트입니다. 협의된 기능을 기준으로 서비스 메인 스트럭처를 제안했고, 확정 이후 서비스 전체 UX/UI 설계를 담당했습니다.",
+   tasks:[], pct:{a:40,u:70,s:80}},
+  {id:"yolotalk", co:"mwk-2", title:"욜로톡", client:"SK 브로드밴드", start:"2017-06", end:"2018-07", type:["Mobile App","PC App"], work:["신규"],
+   role:"SKB UC 프로젝트 입찰을 위한 UX/UI 제안 작업을 진행했습니다. FMC(인터넷 전화·문자 메시지 기능) 버전과 UC(전체 기능) 버전 모바일 앱의 전체 UX/UI 설계를 담당했고, 오픈 시점에는 개발 기준으로 PC 앱 화면설계서를 현행화하고 사용자 매뉴얼을 작성했습니다.",
+   tasks:[], pct:{a:30,u:40,s:100}, pctNote:"화면설계서 100%는 Mobile App 기준", key:true},
+  {id:"noita", co:"etc", title:"노이타 스태프 앱", client:"(주)노이타보니", start:"2017-02", end:"2017-05", type:["Mobile App"], os:"Tablet", work:["신규"],
+   intro:"노이타 매장 점주와 직원을 위한 관리자 앱으로, 회원 정보 관리와 측정 기기 연동을 통한 풋 스캔·자세 측정 기능을 제공합니다.",
+   role:"노이타 매장에서 회원가입과 관리를 하는 스태프 전용 태블릿 앱의 UX/UI 설계를 담당했습니다.",
+   tasks:[], pct:{a:60,u:80,s:100}},
+  // 벤치비
+  {id:"benchbee", co:"benchbee", title:"벤치비 인터넷 속도측정", sub:"2.0 · 3.0 · HTML5", client:"(주)벤치비", start:"2014-09", end:"2017-02", type:["Mobile App","Web"], work:["운영 및 개선","고도화","리뉴얼"],
+   role:"자사 서비스인 인터넷 속도측정 '벤치비'의 안드로이드·iOS 앱과 PC 웹 UX/UI 설계와 운영을 맡았습니다.",
+   tasks:["벤치비 3.0 (2015.08–2017.02): 속도측정 기능 향상에 중점을 둔 업그레이드. 2012년 6월 이후 4년 만의 UX/UI 개편, 오픈 후 모바일 광고 게재와 운영","벤치비 HTML5 (2016.08–2016.11): 모바일과 웹이 하나의 서비스로 느껴지도록 PC 웹 UX/UI 설계","벤치비 2.0 (2014.09–2016.04): 안드로이드·iOS UX/UI 설계와 서비스 운영"],
+   pct:{a:70,u:70,s:100}, pctNote:"3.0 기준 (HTML5: 분석 70 · 기획 80 · 화면설계 100)", link:"https://play.google.com/store/apps/details?id=com.benchbee.AST"},
+  // 엔미디어플랫폼
+  {id:"getogold", co:"nmedia", title:"게토골드", sub:"PC방 관리 프로그램", client:"㈜엔미디어플랫폼", start:"2014-03", end:"2014-07", type:["PC App"], work:["고도화"],
+   role:"PC방 관리 프로그램의 기능 설계를 맡았습니다.", tasks:["게토 웹: '본인인증 관리' 메뉴 설계","게토골드: 메뉴판 기능 설계"]},
+  {id:"gt-touch", co:"nmedia", title:"GT TOUCH", sub:"무인 선불기", client:"㈜엔미디어플랫폼", start:"2014-03", end:"2014-07", type:["PC App"], work:["운영 및 개선","고도화"],
+   role:"무인 선불기의 온라인 상품권 발권 기능 설계를 담당했습니다.", tasks:[]},
+  // 모바일웍스 대리
+  {id:"gcar", co:"mwk-1", title:"G-CAR", sub:"수입 중고차 매매", client:"(주)도이치모터스", start:"2013-01", end:"2013-07", type:["Mobile Web","Web"], work:["신규"],
+   intro:"BMW 공식 수입사 도이치모터스가 운영한 수입 중고차 매매 전문 서비스입니다.",
+   role:"독일 브랜드 전문 중고차 매매 모바일·PC 사이트 신규 구축 프로젝트입니다. 도이치모터스 담당자와 사이트 기능을 정의하고 모바일·PC 웹 UX/UI를 담당했습니다.",
+   tasks:[], pct:{a:30,u:70,s:100}},
+  {id:"ssiat", co:"mwk-1", title:"씨앗 플러스", client:"SK 플래닛", start:"2012-04", end:"2013-01", type:["Mobile App","Admin"], work:["신규","운영 및 개선"],
+   role:"Front와 Admin의 UX/UI 설계를 담당하고, 서비스 오픈 후 운영 관리 업무를 진행했습니다.", tasks:[], pct:{a:30,u:70,s:90,o:60}, related:[{id:"bonusplus", note:"이 프로젝트의 출발점"}]},
+  {id:"bonusplus", co:"mwk-1", title:"보너스 플러스 1.0 & 2.0", sub:"스마트월렛", client:"SK 플래닛", start:"2011-08", end:"2012-11", type:["Mobile App"], work:["신규","운영 및 개선"],
+   role:"'스마트월렛' 사용자를 위한 Loyalty Program의 일환으로, 비즈니스를 기획하는 단계부터 참여했습니다. Front와 Admin UX/UI 설계를 맡고 서비스 오픈까지 내부 PL 역할을 했으며, 오픈 이후 2.0 버전까지 운영·관리를 진행했습니다.",
+   tasks:[], pct:{a:30,u:70,s:90,o:60}, key:true, highlight:"비즈니스 기획부터 오픈, 2.0 운영까지 처음부터 끝까지 맡은 첫 프로젝트입니다. 이 경험이 SK플래닛 '씨앗 플러스'로 이어졌고, 기획자로서 지금까지 많은 것을 경험하게 해 준 출발점이 되었습니다.", related:[{id:"ssiat", note:"이어진 프로젝트"}]},
+  {id:"wow", co:"mwk-1", title:"2012 런던올림픽 삼성 WOW", client:"SAMSUNG 무선사업부 / Insprit", start:"2011-04", end:"2012-03", type:["Mobile App"], os:"Android", work:["신규"],
+   role:"올림픽 경기 정보 공식 앱 'mINFO'와 홈 화면 위젯형 서비스 'Premium WOW'의 UX/UI 설계를 담당했습니다. 내부 PL로서 디자인 담당자의 업무 진행 사항과 일정을 관리했습니다.",
+   tasks:[], pct:{a:30,u:60,s:100}, key:true}
+];
+const JOBS = [
+  {id:"mwk-now", co:"모바일웍스코리아(주)", role:"서비스 기획 · 차장", when:"2024.09.02 – 현재", tag:"재직 중", summary:"SKT의 오프라인 체험 공간 'T Factory 성수'의 Web · Admin · QR Web을 제안부터 구축까지 진행했고, 오픈 이후 운영까지 맡고 있습니다."},
+  {id:"huton", co:"(주)휴톰", role:"기획그룹 · 플랫폼 담당 PM", when:"2024.01.02 – 2024.08.31", tag:"메디컬 AI", summary:"외과 수술용 AI 내비게이션 및 플랫폼을 개발하는 메디컬 회사에서 RUS Platform 3개 프로덕트(Portal · Cloud · Recon)의 버전 업데이트와 SurgGram P.O.C 설계를 맡았습니다."},
+  {id:"nei", co:"(주)네이앤컴퍼니", role:"프로덕트팀 · 팀장", when:"2021.02.01 – 2023.10.20", tag:"MaaS 스타트업", summary:"친환경 MaaS 플랫폼 '네이버스'에서 기획·디자인·CX로 구성된 프로덕트 팀을 이끌며 운영, 신규 기능 기획, 검수, 출시를 관리했습니다."},
+  {id:"mwk-f", co:"모바일웍스코리아(주)", role:"프리랜서", when:"2020.09.01 – 2021.01.29"},
+  {id:"mwk-2", co:"모바일웍스코리아(주)", role:"UX/UI 기획팀 · 차장", when:"2017.03.01 – 2020.06.01", tag:"에이전시"},
+  {id:"benchbee", co:"(주)벤치비", role:"벤치비팀 · 대리", when:"2014.08.25 – 2017.02.07", tag:"자사 서비스"},
+  {id:"nmedia", co:"(주)엔미디어플랫폼", role:"GT사업부 기획팀 · 대리", when:"2014.03.01 – 2014.07.05"},
+  {id:"mwk-1", co:"모바일웍스코리아(주)", role:"기획팀 · 대리", when:"2011.03.01 – 2013.07.31", tag:"에이전시"},
+  {id:"design", co:"모바일웍스코리아(주)", role:"디자인팀 · 사원", when:"2009.05.01 – 2010.01.30", tag:"UI 디자이너로 시작", summary:"UI 디자이너로 IT 업계에 들어와 모바일 · 디바이스 UX/UI 디자인을 진행했습니다."}
+];
+const IMGS = {"neibus-20": {"cover": "img/neibus-20/cover.jpg", "shots": ["img/neibus-20/01.jpg", "img/neibus-20/02.jpg", "img/neibus-20/03.jpg", "img/neibus-20/04.jpg", "img/neibus-20/05.jpg", "img/neibus-20/06.jpg"]}, "neibus-admin": {"cover": "img/neibus-admin/cover.jpg", "shots": ["img/neibus-admin/01.jpg", "img/neibus-admin/02.jpg", "img/neibus-admin/03.jpg", "img/neibus-admin/04.jpg", "img/neibus-admin/05.jpg"]}, "wow": {"cover": "img/wow/cover.jpg", "shots": ["img/wow/01.jpg", "img/wow/02.jpg", "img/wow/03.jpg", "img/wow/04.jpg", "img/wow/05.jpg", "img/wow/06.jpg", "img/wow/07.jpg", "img/wow/08.jpg", "img/wow/09.jpg", "img/wow/10.jpg", "img/wow/11.jpg", "img/wow/12.jpg", "img/wow/13.jpg", "img/wow/14.jpg"]}, "barunphone": {"cover": "img/barunphone/cover.jpg", "shots": ["img/barunphone/01.jpg", "img/barunphone/02.jpg", "img/barunphone/03.jpg", "img/barunphone/04.jpg", "img/barunphone/05.jpg"]}, "benchbee": {"cover": "img/benchbee/cover.jpg", "shots": ["img/benchbee/01.jpg", "img/benchbee/02.jpg", "img/benchbee/03.jpg", "img/benchbee/04.jpg", "img/benchbee/05.jpg", "img/benchbee/06.jpg", "img/benchbee/07.jpg", "img/benchbee/08.jpg", "img/benchbee/09.jpg", "img/benchbee/10.jpg", "img/benchbee/11.jpg", "img/benchbee/12.jpg", "img/benchbee/13.jpg", "img/benchbee/14.jpg", "img/benchbee/15.jpg", "img/benchbee/16.jpg"]}, "bonusplus": {"cover": "img/bonusplus/cover.jpg", "shots": ["img/bonusplus/01.jpg", "img/bonusplus/02.jpg", "img/bonusplus/03.jpg", "img/bonusplus/04.jpg", "img/bonusplus/05.jpg", "img/bonusplus/06.jpg", "img/bonusplus/07.jpg", "img/bonusplus/08.jpg", "img/bonusplus/09.jpg", "img/bonusplus/10.jpg", "img/bonusplus/11.jpg"]}, "ssiat": {"cover": "img/ssiat/cover.jpg", "shots": ["img/ssiat/01.jpg", "img/ssiat/02.jpg", "img/ssiat/03.jpg", "img/ssiat/04.jpg", "img/ssiat/05.jpg", "img/ssiat/06.jpg", "img/ssiat/07.jpg", "img/ssiat/08.jpg", "img/ssiat/09.jpg", "img/ssiat/10.jpg", "img/ssiat/11.jpg"]}, "yolotalk": {"cover": "img/yolotalk/cover.jpg", "shots": ["img/yolotalk/01.jpg", "img/yolotalk/02.jpg", "img/yolotalk/03.jpg", "img/yolotalk/04.jpg", "img/yolotalk/05.jpg", "img/yolotalk/06.jpg"]}, "genesis-key": {"cover": "img/genesis-key/cover.jpg", "shots": ["img/genesis-key/01.jpg", "img/genesis-key/02.jpg", "img/genesis-key/03.jpg", "img/genesis-key/04.jpg", "img/genesis-key/05.jpg", "img/genesis-key/06.jpg"]}, "castpick": {"cover": "img/castpick/cover.jpg", "shots": ["img/castpick/01.jpg", "img/castpick/02.jpg", "img/castpick/03.jpg", "img/castpick/04.jpg", "img/castpick/05.jpg", "img/castpick/06.jpg", "img/castpick/07.jpg", "img/castpick/08.jpg", "img/castpick/09.jpg", "img/castpick/10.jpg"]}, "hyundai-key": {"cover": "img/hyundai-key/cover.jpg", "shots": ["img/hyundai-key/01.jpg", "img/hyundai-key/02.jpg", "img/hyundai-key/03.jpg", "img/hyundai-key/04.jpg", "img/hyundai-key/05.jpg", "img/hyundai-key/06.jpg"]}, "gcar": {"cover": "img/gcar/cover.jpg", "shots": []}, "gt-touch": {"cover": "img/gt-touch/cover.jpg", "shots": []}, "noita": {"cover": "img/noita/cover.jpg", "shots": []}, "mintit": {"cover": "img/mintit/cover.jpg", "shots": ["img/mintit/spec1.jpg", "img/mintit/spec2.jpg", "img/mintit/spec3.jpg", "img/mintit/spec4.jpg", "img/mintit/spec5.jpg", "img/mintit/spec6.jpg", "img/mintit/spec7.jpg", "img/mintit/spec8.jpg"], "groups": [{"label": "민팃 화면설계서", "count": 8, "wide": true}]}, "castle": {"cover": "img/castle/cover.jpg", "shots": []}, "hkey-life": {"cover": "img/hkey-life/cover.jpg", "shots": []}, "neibus-25": {"cover": "img/neibus-25/cover.jpg", "shots": ["img/neibus-25-aos/01.jpg", "img/neibus-25-aos/02.jpg", "img/neibus-25-aos/03.jpg", "img/neibus-25-aos/04.jpg", "img/neibus-25-aos/05.jpg", "img/neibus-25-aos/06.jpg", "img/neibus-25-aos/07.jpg", "img/neibus-ios/cover.jpg", "img/neibus-ios/01.jpg", "img/neibus-ios/02.jpg", "img/neibus-ios/03.jpg", "img/neibus-ios/04.jpg", "img/neibus-ios/05.jpg", "img/neibus-ios/06.jpg", "img/neibus-ios/07.jpg"], "groups": [{"label": "AOS App", "count": 7}, {"label": "iOS App", "count": 8}]}, "mocean": {"cover": "img/mocean/cover.jpg", "shots": ["img/mocean/spec1.jpg", "img/mocean/spec2.jpg", "img/mocean/spec3.jpg", "img/mocean/spec4.jpg", "img/mocean/spec5.jpg", "img/mocean/spec6.jpg", "img/mocean/spec7.jpg", "img/mocean/spec8.jpg", "img/mocean/spec9.jpg", "img/mocean/flow1.jpg", "img/mocean/flow4.jpg", "img/mocean/flow2.jpg", "img/mocean/flow3.jpg"], "groups": [{"label": "MOCEAN 화면설계서", "count": 9, "wide": true}, {"label": "Screen Flow", "count": 4, "wide": true}]}, "tfactory": {"cover": "img/tfactory/cover.jpg", "shots": ["img/tfactory/adm2.jpg", "img/tfactory/adm3.jpg", "img/tfactory/adm5.jpg", "img/tfactory/adm4.jpg", "img/tfactory/adm6.jpg", "img/tfactory/adm7.jpg", "img/tfactory/adm8.jpg", "img/tfactory/adm9.jpg", "img/tfactory/spec1.jpg", "img/tfactory/spec2.jpg", "img/tfactory/spec3.jpg", "img/tfactory/spec4.jpg", "img/tfactory/qr1.jpg", "img/tfactory/qr3.jpg", "img/tfactory/qr2.jpg", "img/tfactory/qr4.jpg"], "groups": [{"label": "Admin 화면설계서", "count": 8, "wide": true}, {"label": "Web 화면설계서", "count": 4, "wide": true}, {"label": "QR Web 화면설계서", "count": 4, "wide": true}]}, "avis": {"cover": "img/avis/cover.jpg", "shots": ["img/avis/01.jpg"]}, "rus-platform": {"cover": "img/rus-platform/cover.jpg", "shots": ["img/rus-platform/spec01.jpg", "img/rus-platform/spec02.jpg", "img/rus-platform/spec03.jpg", "img/rus-platform/spec04.jpg", "img/rus-platform/spec09.jpg", "img/rus-platform/spec10.jpg", "img/rus-platform/spec11.jpg", "img/rus-platform/spec14.jpg", "img/rus-platform/spec15.jpg", "img/rus-platform/spec16.jpg", "img/rus-platform/spec17.jpg", "img/rus-platform/spec05.jpg", "img/rus-platform/spec06.jpg", "img/rus-platform/spec07.jpg", "img/rus-platform/spec08.jpg", "img/rus-platform/spec12.jpg", "img/rus-platform/spec13.jpg", "img/rus-platform/spec22.jpg", "img/rus-platform/spec18.jpg", "img/rus-platform/spec19.jpg", "img/rus-platform/spec20.jpg", "img/rus-platform/spec21.jpg"], "groups": [{"label": "RUS Portal 화면설계서", "count": 4, "wide": true}, {"label": "RUS Cloud 화면설계서", "count": 3, "wide": true}, {"label": "RUS Recon. 화면설계서", "count": 4, "wide": true}, {"label": "Screen Flow", "count": 11, "wide": true}]}, "surggram": {"cover": "img/surggram/cover.jpg", "shots": ["img/surggram/spec1.jpg", "img/surggram/spec2.jpg", "img/surggram/spec3.jpg", "img/surggram/spec4.jpg", "img/surggram/spec5.jpg", "img/surggram/spec6.jpg", "img/surggram/spec7.jpg", "img/surggram/spec8.jpg"], "groups": [{"label": "SurgGram 화면설계서", "count": 4, "wide": true}, {"label": "SurgGram Screen Flow", "count": 4, "wide": true}]}, "getogold": {"cover": "img/getogold/cover.jpg", "shots": []}};
+
+/* ---------- 도우미 ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ym = s => s ? s.replace("-", ".") : "";
+const period = p => `${ym(p.start)} – ${p.end ? ym(p.end) : "현재"}`;
+const NOW = new Date();
+function months(p){
+  const [sy, sm] = p.start.split("-").map(Number);
+  const [ey, em] = p.end ? p.end.split("-").map(Number) : [NOW.getFullYear(), NOW.getMonth() + 1];
+  return Math.max(1, (ey - sy) * 12 + (em - sm) + 1);
+}
+const job0 = p => (jobOf(p)?.co || "프로젝트");
+const jobOf = p => JOBS.find(j => j.id === p.co);
+const ICON = {
+  arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>',
+  ext:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>',
+  clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  stack:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/></svg>',
+  users:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/></svg>',
+  doc:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg>'
+};
+function cover(p, cls){
+  const c = IMGS[p.id]?.cover;
+  return c ? `<img src="${c}" alt="${esc(p.title)} 표지" loading="lazy">`
+           : `<div class="gen ${cls||""}" aria-hidden="true"><span class="gt">${esc(p.title)}</span><span class="gs">${esc(p.sub || p.type.join(" & "))}</span><span class="gc">${esc(p.client)}</span></div>`;
+}
+const statusChip = p => p.status ? `<span class="chip">${esc(p.status)}</span>` : p.end ? `<span class="chip">${ym(p.end)} 완료</span>` : `<span class="chip live"><span class="dot"></span>운영 중</span>`;
+
+/* ---------- 경력 지표 (데이터에서 계산) ---------- */
+(function(){
+  const EMPLOYERS = ["(주)휴톰","(주)네이앤컴퍼니","(주)벤치비","㈜엔미디어플랫폼"];
+  const clients = new Set(PROJECTS.filter(p => !EMPLOYERS.includes(p.client)).map(p => p.client.split(" / ")[0].replace(/[\s()㈜주]/g,"")));
+  const skClients = [...clients].filter(c => /^SK/.test(c)).length;
+  const withPct = PROJECTS.filter(p => p.pct);
+  const spec100 = withPct.filter(p => p.pct.s === 100).length;
+  const types = new Set(PROJECTS.flatMap(p => p.type));
+  const M = [
+    {lbl:"Experience", icon:ICON.clock, val:'15<small>년+</small>', title:"서비스 기획 경력", desc:"2009년 UI 디자이너로 시작해 서비스 기획으로 전향, 재직 기간 합산 기준입니다.", foot:"2009 → 현재"},
+    {lbl:"Portfolio", icon:ICON.stack, val:`${PROJECTS.length}<small>+</small>`, title:"기획 · 설계 프로젝트", desc:[...types].join(" · ") + "까지 다양한 유형을 맡았습니다.", foot:`${types.size}가지 프로덕트 유형`},
+    {lbl:"Clients", icon:ICON.users, val:`${clients.size}<small>+</small>`, title:"협업 클라이언트", desc:"SKT · 현대자동차 · 삼성 · SK플래닛 등 대기업 서비스를 함께 만들었습니다.", foot:`SK 계열 ${skClients}곳`},
+    {lbl:"Ownership", icon:ICON.doc, val:`${spec100}<small>건</small>`, title:"화면설계서 100% 작성", desc:"참여도 기록이 있는 프로젝트 중 화면설계서를 직접 100% 작성한 건수입니다.", foot:`기록 ${withPct.length}건 중 ${spec100}건`}
+  ];
+  $("#metricsGrid").innerHTML = M.map(m => `<div class="metric"><div class="top"><span class="lbl">${m.lbl}</span>${m.icon}</div><div class="val">${m.val}</div><h3>${m.title}</h3><p>${esc(m.desc)}</p><span class="foot">${esc(m.foot)}</span></div>`).join("");
+})();
+
+/* ---------- 대표 프로젝트 ---------- */
+const FEATURED = ["tfactory", "neibus-25", "hyundai-key", "bonusplus"];
+PROJECTS.forEach(p => p.key = FEATURED.includes(p.id));
+function renderCases(){
+  $("#casesList").innerHTML = FEATURED.map(id => PROJECTS.find(p => p.id === id)).filter(Boolean).map(p => {
+    const mini = p.pct
+      ? [["UX/UI 기획", p.pct.u + "%", "기획 참여도"], ["화면설계서", p.pct.s + "%", "직접 작성 비율"]]
+      : [["기간", months(p) + "개월", period(p)], ["유형", p.type.join(" · "), p.work.join(" · ")]];
+    const contrib = p.tasks.length ? p.tasks.slice(0, 3).join(" · ") : (p.pct ? `분석 및 정의 ${p.pct.a}% · UX/UI 기획 ${p.pct.u}% · 화면설계서 ${p.pct.s}%${p.pct.o ? ` · 운영 관리 ${p.pct.o}%` : ""}` : "");
+    const contribLabel = p.tasks.length ? "Key tasks" : "Contribution";
+    return `<article class="case" data-case="${p.id}">
+      <div class="case-media">
+        <div class="case-img">${cover(p)}</div>
+        <div class="mini">${mini.map(([l,v,s]) => `<div><span class="lbl">${l}</span><b>${esc(v)}</b><span>${esc(s)}</span></div>`).join("")}</div>
+      </div>
+      <div>
+        <div class="chips"><span class="chip blue">${esc(p.client)}</span><span class="chip">${months(p)}개월</span>${statusChip(p)}</div>
+        <h3>${esc(p.title)}${p.sub ? ` (${esc(p.sub)})` : ""}</h3>
+        <div class="client">${esc(jobOf(p)?.co || "")} · ${period(p)}</div>
+        ${p.highlight && p.id !== "tfactory" ? `<p class="highlight">${esc(p.highlight)}</p>` : ""}
+        <div class="psr">
+          ${p.intro ? `<div><span class="k p">Product</span><p>${esc(p.intro)}</p></div>` : ""}
+          <div><span class="k s">Role</span><p>${esc(p.role)}</p></div>
+          ${contrib ? `<div><span class="k i">${contribLabel}</span><p>${esc(contrib)}</p></div>` : ""}
+        </div>
+        <div class="case-foot">
+          <div class="chips">${p.work.map(w => `<span class="chip">${esc(w)}</span>`).join("")}${p.os ? `<span class="chip">${esc(p.os)}</span>` : ""}</div>
+          <button class="link-btn" type="button" data-open="${p.id}">상세 보기 ${ICON.arrow}</button>
+        </div>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+/* ---------- 경력 ---------- */
+/* 경력: 이력서 기준으로 진행한 프로젝트를 모두 표시 (통합한 프로젝트도 따로). d = 상세 페이지 id */
+const JOB_ITEMS = {
+  "mwk-now":[
+    {n:"T Factory 성수 · 운영", t:"Web · Admin · QR Web", s:"2025-09", e:"", d:"tfactory"},
+    {n:"T Factory 성수 · 구축", t:"Web · Admin · QR Web", s:"2025-04", e:"2025-09", d:"tfactory"},
+    {n:"SK On AVIS 고도화", t:"Web · Admin", s:"2025-01", e:"2025-05", d:"avis"},
+    {n:"현대자동차 MOCEAN CARSHARING · 운영", t:"Mobile App · Admin", s:"2024-09", e:"2024-12", d:"mocean"}],
+  "huton":[
+    {n:"RUS Platform (Portal · Cloud · Recon)", t:"Web", s:"2024-01", e:"2024-07", d:"rus-platform"},
+    {n:"SurgGram P.O.C", t:"Web", s:"2024-05", e:"2024-08", d:"surggram"}],
+  "nei":[
+    {n:"네이버스 2.5 · iOS App 신규 출시", t:"Mobile App", s:"2022-07", e:"2023-10", d:"neibus-25"},
+    {n:"네이버스 2.5 · AOS App", t:"Mobile App", s:"2022-01", e:"2023-10", d:"neibus-25"},
+    {n:"네이버스 2.0 · Mobile App", t:"Mobile App", s:"2021-02", e:"2022-01", d:"neibus-20"},
+    {n:"네이버스 관리자 사이트", t:"Admin", s:"2021-02", e:"2023-10", d:"neibus-admin"}],
+  "mwk-f":[
+    {n:"민팃 · 중고폰 거래 플랫폼", t:"Mobile Web", s:"2020-10", e:"2021-01", d:"mintit"},
+    {n:"현대자동차 디지털 키 · 키 & 라이프 서비스", t:"Mobile App", s:"2020-09", e:"2020-10", d:"hkey-life"}],
+  "mwk-2":[
+    {n:"캐스트픽 · 온라인 배우 캐스팅 서비스", t:"Web · Admin", s:"2019-09", e:"2020-04", d:"castpick"},
+    {n:"SK 텔링크 바른폰 관리자 사이트", t:"Admin", s:"2019-04", e:"2019-08", d:"barunphone"},
+    {n:"제네시스 디지털 키", t:"Mobile App", s:"2019-02", e:"2019-07", d:"genesis-key"},
+    {n:"현대자동차 디지털 키", t:"Mobile App", s:"2018-06", e:"2019-02", d:"hyundai-key"},
+    {n:"롯데 캐슬 스마트홈", t:"Mobile App", s:"2017-12", e:"2018-04", d:"castle"},
+    {n:"SK 브로드밴드 욜로톡", t:"Mobile App · PC App", s:"2017-06", e:"2018-07", d:"yolotalk"},
+    {n:"노이타 스태프 앱", t:"Tablet App", s:"2017-02", e:"2017-05", d:"noita"}],
+  "benchbee":[
+    {n:"벤치비 HTML5 · 인터넷 속도측정", t:"PC Web", s:"2016-08", e:"2016-11", d:"benchbee"},
+    {n:"벤치비 3.0 · 인터넷 속도측정", t:"Mobile App", s:"2015-08", e:"2017-02", d:"benchbee"},
+    {n:"벤치비 2.0 · 인터넷 속도측정", t:"Mobile App", s:"2014-09", e:"2016-04", d:"benchbee"}],
+  "nmedia":[
+    {n:"게토골드 · PC방 관리 프로그램", t:"PC App", s:"2014-03", e:"2014-07", d:"getogold"},
+    {n:"GT TOUCH · 무인 선불기", t:"PC App", s:"2014-03", e:"2014-07", d:"gt-touch"}],
+  "mwk-1":[
+    {n:"G-CAR · 수입 중고차 매매", t:"Mobile Web · PC Web", s:"2013-01", e:"2013-07", d:"gcar"},
+    {n:"SK 플래닛 씨앗 플러스", t:"Mobile App · Admin", s:"2012-04", e:"2013-01", d:"ssiat"},
+    {n:"스마트월렛 보너스 플러스 1.0 & 2.0", t:"Mobile App", s:"2011-08", e:"2012-11", d:"bonusplus"},
+    {n:"2012 런던올림픽 삼성 WOW", t:"Mobile App", s:"2011-04", e:"2012-03", d:"wow"}],
+  "design":[
+    {n:"SHOW Mobile WAP", t:"UX/UI Design"},
+    {n:"한네트 현금 인출기 유지 보수", t:"UX/UI Design"},
+    {n:"LG 피처폰 · 삼성테크윈 SCC-6000", t:"UX/UI Design"}]
+};
+const jobMobile = () => matchMedia("(max-width:767px)").matches;
+matchMedia("(max-width:767px)").addEventListener("change", () => { pgOpen.clear(); renderTimeline(); renderGrid(); });
+function renderTimeline(){
+  $("#timeline").innerHTML = JOBS.map((j, idx) => {
+    const items = JOB_ITEMS[j.id] || [];
+    const row = it => {
+      const when = it.s ? `${ym(it.s)} – ${it.e ? ym(it.e) : "현재"}` : "";
+      const inner = `<span class="nm">${esc(it.n)}</span><span class="pf">${esc(it.t)}</span><span class="dt">${when}</span>`;
+      return it.d && PROJECTS.some(p => p.id === it.d)
+        ? `<li><button type="button" data-open="${it.d}">${inner}<span class="go" aria-label="상세 보기"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></span></button></li>`
+        : `<li><div class="row-plain">${inner}<span class="go-none"></span></div></li>`;
+    };
+    return `<div class="job${idx === 0 ? " current" : ""}">
+      <div>
+        <div class="co">${esc(j.co)}</div>
+        <div class="role">${esc(j.role)}</div>
+        <div class="when">${esc(j.when)}</div>
+        ${j.tag ? `<span class="chip ${idx === 0 ? "live" : "blue"} jtag">${idx === 0 ? '<span class="dot"></span>' : ""}${esc(j.tag)}</span>` : ""}
+      </div>
+      <div>
+        ${j.summary ? `<p class="summary">${esc(j.summary)}</p>` : ""}
+        ${items.length ? `<details class="jlist"${idx === 0 || !jobMobile() ? " open" : ""}><summary>프로젝트 ${items.length}건<i aria-hidden="true"></i></summary><ul>${items.map(row).join("")}</ul></details>` : ""}
+        ${j.memo ? `<span class="memo">${esc(j.memo)}</span>` : ""}
+      </div>
+    </div>`;
+  }).join("");
+}
+
+
+/* 노션 포트폴리오 구분과 같은 기간 그룹 */
+const GROUPS = [
+  {id:"g1", label:"2024 ~ 현재", ids:["tfactory","avis","mocean"]},
+  {id:"g2", label:"2021 ~ 2024", ids:["rus-platform","surggram","neibus-25","neibus-admin","neibus-20"]},
+  {id:"g3", label:"2021년 이전", ids:["hyundai-key","genesis-key","yolotalk","benchbee","ssiat","bonusplus","wow","castpick","barunphone"]},
+  {id:"g4", label:"Etc. (업데이트 예정)", ids:[]}
+];
+PROJECTS.forEach(p => { const g = GROUPS.slice(0,3).find(g => g.ids.includes(p.id)); p.group = g ? g.id : "g4"; if (!g) GROUPS[3].ids.push(p.id); });
+/* ---------- 전체 프로젝트 ---------- */
+const TYPES = ["전체","Mobile App","Mobile Web","Web","Admin","PC App"];
+const WORKS = ["전체","신규","리뉴얼","고도화","운영 및 개선"];
+let fType = "전체", fWork = "전체";
+function chips(el, list, get, set){
+  el.insertAdjacentHTML("beforeend", list.map(v => `<button type="button" class="fchip" aria-pressed="${v===get()}" data-v="${esc(v)}">${esc(v)}</button>`).join(""));
+  el.addEventListener("click", e => {
+    const b = e.target.closest(".fchip"); if (!b) return;
+    set(b.dataset.v);
+    el.querySelectorAll(".fchip").forEach(c => c.setAttribute("aria-pressed", c.dataset.v === b.dataset.v));
+    renderGrid();
+  });
+}
+let fGroup = "전체";
+function cardHTML(p){ return `
+    <button type="button" class="card" data-open="${p.id}" aria-label="${esc(p.title)} 상세 보기">
+      <div class="thumb">${cover(p)}</div>
+      <div class="body">
+        <span class="client">${esc(p.client)}</span>
+        <span class="title">${esc(p.title)}</span>
+        ${p.sub ? `<span class="sub">${esc(p.sub)}</span>` : ""}
+        <span class="when">${period(p)}</span>
+        <span class="meta">${p.key ? `<span class="chip key">대표</span>` : ""}${p.work.map(w => `<span class="chip">${esc(w)}</span>`).join("")}</span>
+      </div>
+    </button>`; }
+const pgOpen = new Set();
+function renderGrid(){
+  const list = PROJECTS.filter(p => (fType==="전체" || p.type.includes(fType)) && (fWork==="전체" || p.work.includes(fWork)) && (fGroup==="전체" || GROUPS.find(g => g.label===fGroup).id === p.group));
+  $("#count").textContent = `${list.length} / ${PROJECTS.length}개`;
+  if (!list.length) { $("#grid").innerHTML = `<div class="empty">이 조건에 맞는 프로젝트가 없습니다. 다른 필터를 골라 보세요.</div>`; return; }
+  const mobile = matchMedia("(max-width:767px)").matches, single = fGroup !== "전체";
+  let first = true;
+  $("#grid").innerHTML = GROUPS.map(g => {
+    const items = list.filter(p => p.group === g.id);
+    if (!items.length) return "";
+    const open = g.id === "g4" ? (single || pgOpen.has(g.id)) : (!mobile || single || first || pgOpen.has(g.id)); first = false;
+    return `<details class="pgroup" data-g="${g.id}"${open ? " open" : ""}><summary class="pg-head">${esc(g.label)}<span>${items.length}</span><i aria-hidden="true"></i></summary><div class="grid">${items.map(cardHTML).join("")}</div></details>`;
+  }).join("");
+  document.querySelectorAll("#grid details.pgroup").forEach(d => d.addEventListener("toggle", () => { d.open ? pgOpen.add(d.dataset.g) : pgOpen.delete(d.dataset.g); }));
+}
+
+/* ---------- 상세 페이지 ---------- */
+function galleryHTML(p, im){
+  const btn = (src, k) => `<button type="button" data-lb="${k}" aria-label="${esc(p.title)} 장표 ${k+1} 크게 보기"><img src="${src}" alt="${esc(p.title)} 장표 ${k+1}" loading="lazy"><span class="n">장표 ${String(k+1).padStart(2,"0")}</span></button>`;
+  if (!im.groups) return `<div class="gallery">${im.shots.map(btn).join("")}</div>`;
+  let k = 0;
+  return im.groups.map((g, gi) => { const part = im.shots.slice(k, k + g.count).map((src, j) => btn(src, k + j)).join(""); k += g.count; return `<details class="g-acc"${gi === 0 ? " open" : ""}><summary class="g-head">${esc(g.label)} <span>${g.count}장</span><i aria-hidden="true"></i></summary><div class="gallery${g.wide ? " wide" : ""}">${part}</div></details>`; }).join("");
+}
+let current = null, lastFocus = null;
+function openDetail(id, push = true){
+  const p = PROJECTS.find(x => x.id === id); if (!p) return;
+  if (!$("#detail").classList.contains("on")) lastFocus = document.activeElement;
+  current = p;
+  const i = PROJECTS.indexOf(p), prev = PROJECTS[i-1], next = PROJECTS[i+1];
+  const job = jobOf(p), im = IMGS[p.id];
+  const shots = im ? im.shots : [];
+  $("#dCrumb").innerHTML = `<b>${esc(p.title)}</b>`;
+  $("#dPrev").disabled = !prev; $("#dNext").disabled = !next;
+  const bars = p.pct ? [["분석 및 정의",p.pct.a],["UX/UI 기획",p.pct.u],["화면설계서 작성",p.pct.s]].concat(p.pct.o ? [["운영 관리",p.pct.o]] : []) : [];
+  $("#dContent").innerHTML = `
+    <section class="d-hero"><div class="wrap">
+      <div class="chips">${p.key ? `<span class="chip key">대표 프로젝트</span>` : ""}<span class="chip blue">${esc(p.client)}</span><span class="chip">${months(p)}개월</span>${statusChip(p)}</div>
+      <h1 id="dTitle">${esc(p.title)}${p.sub ? ` <span>(${esc(p.sub)})</span>` : ""}</h1>
+      ${p.intro ? `<p class="intro">${esc(p.intro)}</p>` : ""}
+      ${p.highlight ? `<p class="highlight">${esc(p.highlight)}</p>` : ""}
+      <div class="d-meta">
+        <div><span class="lbl">Client</span><b>${esc(p.client)}</b></div>
+        <div><span class="lbl">Period</span><b class="num">${period(p)}</b></div>
+        <div><span class="lbl">Duration</span><b>${months(p)}개월</b></div>
+        <div><span class="lbl">Scope</span><b>${esc(p.work.join(" · "))}</b></div>
+      </div>
+      <div class="d-cover">${cover(p)}</div>
+    </div></section>
+    <section class="d-body"><div class="wrap">
+      <div class="d-main">
+        ${p.phases ? `<div class="d-sec">
+          <span class="lbl" style="color:var(--accent)">Timeline</span>
+          <h2>진행 기간</h2>
+          <ol class="phases">${[...p.phases].reverse().sort((x, y) => (y.start || "").localeCompare(x.start || "")).map(ph => `<li>
+            <div class="ph-when"><b class="num">${ym(ph.start)} – ${ph.end ? ym(ph.end) : "현재"}</b><span>${months(ph)}개월</span></div>
+            <div class="ph-body"><h3>${esc(ph.label)}</h3>${ph.desc ? `<p>${esc(ph.desc)}</p>` : ""}${ph.work ? `<dl class="ph-kv"><dt>진행 업무</dt><dd>${esc(ph.work)}</dd></dl>` : ""}${ph.tasks ? `${ph.work ? `<div class="ph-sub">업데이트 내용</div>` : ""}<ul>${ph.tasks.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}${ph.tags ? `<div class="chips" style="margin-top:8px">${ph.tags.map(t => `<span class="chip">${esc(t)}</span>`).join("")}</div>` : ""}</div>
+          </li>`).join("")}</ol>
+        </div>` : ""}
+        ${p.improvements ? `<div class="d-sec">
+          <span class="lbl" style="color:var(--accent)">Impact</span>
+          <h2>${esc(p.impactTitle || "고도화 주요 포인트")}</h2>
+          <div class="impacts">${p.improvements.map((m, k) => `<div class="impact">
+            <div class="i-head"><span class="i-no">${String(k+1).padStart(2,"0")}</span><h3>${esc(m.title)}</h3>${m.mine ? `<span class="chip key i-mine">${esc(m.mine)}</span>` : ""}</div>
+            <div class="ba"><div class="b"><span class="lbl">Before</span><p>${esc(m.before)}</p></div><div class="a"><span class="lbl">After</span><p>${esc(m.after)}</p></div></div>
+            ${m.where ? `<div class="i-where">${esc(m.where)}</div>` : ""}
+          </div>`).join("")}</div>
+        </div>` : ""}
+        <div class="d-sec">
+          <span class="lbl" style="color:var(--accent)">Role</span>
+          <h2>진행 업무</h2>
+          <p>${esc(p.role)}</p>
+          ${p.tasks.length ? `<ul class="tasklist">${p.tasks.map(t => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}
+          ${p.memo ? `<span class="memo">${esc(p.memo)}</span>` : ""}
+        </div>
+        ${p.points ? `<div class="d-sec">
+          <span class="lbl" style="color:var(--accent)">Admin Planning</span>
+          <h2>Admin 기획 포인트</h2>
+          <p>${esc(p.points.lead)}</p>
+          ${p.points.groups.map((g, gi) => `<h3 class="pt-head"><span>${String.fromCharCode(65 + gi)}</span>${esc(g.title)}</h3>
+          <div class="impacts">${g.items.map((m, k) => `<div class="impact">
+            <div class="i-head"><span class="i-no">${String(k+1).padStart(2,"0")}</span><h3>${esc(m.t)}</h3></div>
+            <p class="pt-d">${esc(m.d)}</p>
+            ${m.w ? `<div class="i-where">${esc(m.w)}</div>` : ""}
+          </div>`).join("")}</div>`).join("")}
+        </div>` : ""}
+      </div>
+      <aside class="side">
+        ${bars.length ? `<div class="box"><span class="lbl">Contribution</span><h3 style="font-size:17px;font-weight:800;margin:4px 0 14px">참여도</h3><div class="bars">${bars.map(([t,v]) => `<div class="bar"><div class="row"><span>${t}</span><b>${v}%</b></div><div class="track"><div class="fill" style="width:${v}%"></div></div></div>`).join("")}</div>${p.pctNote ? `<p class="note">${esc(p.pctNote)}</p>` : ""}</div>` : ""}
+        <div class="box"><span class="lbl">Project info</span><h3 style="font-size:17px;font-weight:800;margin:4px 0 14px">프로젝트 정보</h3>
+          <dl><dt>소속</dt><dd>${esc(job?.co || "-")}</dd><dt>직무</dt><dd>${esc(job?.role || "-")}</dd><dt>고객사</dt><dd>${esc(p.client)}</dd>${p.os ? `<dt>플랫폼</dt><dd>${esc(p.os)}</dd>` : ""}<dt>유형</dt><dd class="chips" style="gap:6px">${p.type.map(t => `<span class="chip">${esc(t)}</span>`).join("")}</dd></dl>
+          ${p.related ? p.related.map(r => { const q = PROJECTS.find(x => x.id === r.id); return q ? `<button type="button" class="related" data-open="${q.id}"><span class="lbl">${esc(r.note)}</span><b>${esc(q.title)}</b><span>${esc(q.client)} · ${period(q)}</span></button>` : ""; }).join("") : ""}
+          ${p.link ? `<a class="btn btn-primary" style="margin-top:16px;width:100%;justify-content:center" href="${esc(p.link)}" target="_blank" rel="noopener">서비스 보러 가기 ${ICON.ext}</a>` : ""}
+        </div>
+      </aside>
+      <div class="d-out">
+        <div class="d-sec" style="margin-top:0">
+          <span class="lbl" style="color:var(--accent)">Output</span>
+          <h2>결과물${shots.length ? ` · ${shots.length}장` : ""}</h2>
+          ${shots.length ? galleryHTML(p, im)
+                         : `<div class="ph">결과물 화면은 정리 중이며, 곧 업데이트할 예정입니다.</div>`}
+        </div>
+      </div>
+    </div></section>
+    <div class="wrap"><div class="d-nav">
+      ${prev ? `<button type="button" data-open="${prev.id}"><span class="lbl">← 이전 프로젝트</span><b>${esc(prev.title)}${prev.sub ? ` · ${esc(prev.sub)}` : ""}</b></button>` : "<span></span>"}
+      ${next ? `<button type="button" class="next" data-open="${next.id}"><span class="lbl">다음 프로젝트 →</span><b>${esc(next.title)}${next.sub ? ` · ${esc(next.sub)}` : ""}</b></button>` : "<span></span>"}
+    </div></div>`;
+  const d = $("#detail"); d.classList.add("on"); d.scrollTop = 0; document.body.classList.add("lock");
+  $("#dBack").focus();
+  if (push && location.hash !== "#" + p.id) history.replaceState(null, "", "#" + p.id);
+}
+function closeDetail(){
+  $("#detail").classList.remove("on"); document.body.classList.remove("lock"); current = null;
+  if (PROJECTS.some(p => "#" + p.id === location.hash)) history.replaceState(null, "", "#projects");
+  if (lastFocus && document.contains(lastFocus)) lastFocus.focus();
+}
+$("#dBack").addEventListener("click", closeDetail);
+$("#dPrev").addEventListener("click", () => { const i = PROJECTS.indexOf(current); if (i > 0) openDetail(PROJECTS[i-1].id); });
+$("#dNext").addEventListener("click", () => { const i = PROJECTS.indexOf(current); if (i < PROJECTS.length - 1) openDetail(PROJECTS[i+1].id); });
+
+/* ---------- 라이트박스 ---------- */
+let lbIdx = 0;
+const lbList = () => IMGS[current?.id]?.shots || [];
+function lbShow(){ const l = lbList(); $("#lbImg").src = l[lbIdx]; $("#lbImg").alt = `${current.title} 장표 ${lbIdx+1}`; $("#lbCount").textContent = `${current.title} · ${lbIdx+1} / ${l.length}`; $("#lbStage").scrollTop = 0; }
+function lbOpen(i){ lbIdx = i; lbShow(); $("#lb").classList.add("on"); $("#lbClose").focus(); }
+function lbClose(){ $("#lb").classList.remove("on"); }
+$("#lbClose").addEventListener("click", lbClose);
+$("#lbPrev").addEventListener("click", () => { const n = lbList().length; lbIdx = (lbIdx - 1 + n) % n; lbShow(); });
+$("#lbNext").addEventListener("click", () => { const n = lbList().length; lbIdx = (lbIdx + 1) % n; lbShow(); });
+
+document.addEventListener("click", e => {
+  const l = e.target.closest("[data-lb]"); if (l) { lbOpen(+l.dataset.lb); return; }
+  const b = e.target.closest("[data-open]"); if (b) { openDetail(b.dataset.open); return; }
+  const c = e.target.closest("[data-case]"); if (c && !e.target.closest("a, button") && !String(getSelection())) openDetail(c.dataset.case);
+});
+document.addEventListener("keydown", e => {
+  if ($("#lb").classList.contains("on")) {
+    if (e.key === "Escape") lbClose();
+    if (e.key === "ArrowRight") $("#lbNext").click();
+    if (e.key === "ArrowLeft") $("#lbPrev").click();
+    return;
+  }
+  if ($("#detail").classList.contains("on")) {
+    if (e.key === "Escape") closeDetail();
+    if (e.key === "ArrowRight" && !$("#dNext").disabled) $("#dNext").click();
+    if (e.key === "ArrowLeft" && !$("#dPrev").disabled) $("#dPrev").click();
+  }
+});
+function fromHash(){ const id = location.hash.slice(1); if (PROJECTS.some(p => p.id === id)) openDetail(id, false); else if ($("#detail").classList.contains("on")) closeDetail(); }
+window.addEventListener("hashchange", fromHash);
+
+/* ---------- 테마 · 메모 · 복사 · 메뉴 ---------- */
+function systemDark(){ return window.matchMedia("(prefers-color-scheme: dark)").matches; }
+function isDark(){ const t = document.documentElement.getAttribute("data-theme"); return t ? t === "dark" : systemDark(); }
+try { const saved = localStorage.getItem("kkw-theme"); if (saved) document.documentElement.setAttribute("data-theme", saved); } catch(e) {}
+$("#themeBtn").addEventListener("click", () => {
+  const next = isDark() ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  try { localStorage.setItem("kkw-theme", next); } catch(e) {}
+  window.dispatchEvent(new Event("themechange"));
+});
+new MutationObserver(() => window.dispatchEvent(new Event("themechange"))).observe(document.documentElement, {attributes:true, attributeFilter:["data-theme"]});
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => window.dispatchEvent(new Event("themechange")));
+
+/* ---------- 이력서 다운로드 ---------- */
+let dlNs = null;
+(async () => { try { if (window.claude && window.claude.use) dlNs = await window.claude.use("downloads"); } catch {} })();
+document.addEventListener("click", async e => {
+  const a = e.target.closest("[data-dl]"); if (!a || !dlNs) return;
+  e.preventDefault();
+  if (a.dataset.busy) return; a.dataset.busy = "1";
+  try {
+    const blob = await (await fetch(a.getAttribute("href"))).blob();
+    await dlNs.save({ filename: "김광원_이력서.pdf", data: blob });
+  } catch (err) {
+    if (err && err.code && err.code !== "declined" && err.code !== "rate_limited") window.open(a.getAttribute("href"), "_blank", "noopener");
+  } finally { delete a.dataset.busy; }
+});
+document.querySelectorAll(".copy").forEach(b => b.addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = "복사됨"; }
+  catch { b.textContent = "직접 선택해 주세요"; }
+  setTimeout(() => b.textContent = "복사", 1600);
+}));
+(function(){
+  const links = [...document.querySelectorAll(".pills a")];
+  const map = new Map(links.map(a => [a.getAttribute("href").slice(1), a]));
+  const io = new IntersectionObserver(es => es.forEach(en => {
+    if (en.isIntersecting && map.has(en.target.id)) { links.forEach(a => a.classList.remove("on")); map.get(en.target.id).classList.add("on"); }
+  }), {rootMargin:"-45% 0px -50% 0px"});
+  map.forEach((a, id) => { const el = document.getElementById(id); if (el) io.observe(el); });
+})();
+
+document.getElementById('heroProjects').textContent = PROJECTS.length + '+';
+
+/* ---------- 자기소개서 ---------- */
+let letterFocus = null;
+function openLetter(push = true){
+  letterFocus = document.activeElement;
+  const l = $("#letter"); l.classList.add("on"); l.scrollTop = 0; document.body.classList.add("lock"); $("#lBack").focus();
+  if (push && location.hash !== "#letter") history.replaceState(null, "", "#letter");
+}
+function closeLetter(){
+  $("#letter").classList.remove("on"); document.body.classList.remove("lock");
+  if (location.hash === "#letter") history.replaceState(null, "", "#top");
+  if (letterFocus && document.contains(letterFocus)) letterFocus.focus();
+}
+document.querySelectorAll("[data-letter]").forEach(b => b.addEventListener("click", () => openLetter()));
+$("#lBack").addEventListener("click", closeLetter);
+document.addEventListener("keydown", e => { if (e.key === "Escape" && $("#letter").classList.contains("on")) closeLetter(); });
+if (location.hash === "#letter") openLetter(false);
+window.addEventListener("hashchange", () => { if (location.hash === "#letter") openLetter(false); });
+
+renderCases();
+renderTimeline();
+chips($("#fType"), TYPES, () => fType, v => fType = v);
+chips($("#fWork"), WORKS, () => fWork, v => fWork = v);
+renderGrid();
+fromHash();
+
+/* ---------- 모바일 메뉴 ---------- */
+(function(){
+  const b=document.getElementById("menuBtn"), m=document.getElementById("mMenu");
+  const set=o=>{m.hidden=!o; b.setAttribute("aria-expanded",o); b.setAttribute("aria-label",o?"메뉴 닫기":"메뉴 열기");
+    b.innerHTML=o?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';};
+  b.addEventListener("click",()=>set(m.hidden));
+  m.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>set(false)));
+  document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!m.hidden)set(false)});
+  window.addEventListener("resize",()=>{if(innerWidth>767&&!m.hidden)set(false)});
+})();
+</script>
+
+</body>
+</html>
