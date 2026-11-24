@@ -1186,7 +1186,7 @@ const GROUPS = [
   {id:"g1", label:"2024 ~ 현재", ids:["tfactory","avis","mocean"]},
   {id:"g2", label:"2021 ~ 2024", ids:["rus-platform","surggram","neibus-25","neibus-admin","neibus-20"]},
   {id:"g3", label:"2021년 이전", ids:["hyundai-key","genesis-key","yolotalk","benchbee","ssiat","bonusplus","wow","castpick","barunphone"]},
-  {id:"g4", label:"기타 (ETC)", ids:["mintit","hkey-life","geto"]}
+  {id:"g4", label:"기타 (Etc.)", ids:["mintit","hkey-life","geto"]}
 ];
 PROJECTS.forEach(p => { const g = GROUPS.slice(0,3).find(g => g.ids.includes(p.id)); p.group = g ? g.id : "g4"; if (!g && !GROUPS[3].ids.includes(p.id)) GROUPS[3].ids.push(p.id); });
 /* ---------- 전체 프로젝트 ---------- */
