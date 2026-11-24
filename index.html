@@ -969,11 +969,11 @@ const PROJECTS = [
    role:"담당자 요구사항을 받아 전체 서비스의 기능을 분석하고 제안했으며, 협의된 기능을 토대로 웹과 관리자 사이트의 UX/UI를 설계했습니다.",
    tasks:[], pct:{a:60,u:70,s:100}, link:"https://www.castpick.net/"},
   {id:"barunphone", co:"mwk-2", title:"바른폰 관리자 사이트", client:"SK 텔링크", start:"2019-04", end:"2019-08", type:["Admin"], work:["리뉴얼"],
-   role:"바른폰 관리자 사이트의 UX/UI 설계와 매뉴얼 작업을 담당했습니다.", tasks:[], pct:{a:50,u:60,s:90}},
-  {id:"genesis-key", co:"mwk-2", title:"제네시스 디지털 키", client:"(주)현대자동차", start:"2019-02", end:"2019-07", type:["Mobile App"], os:"Android", work:["신규"],
+   role:"바른폰 관리자 사이트의 UX/UI 설계와 매뉴얼 작업을 담당했습니다.", tasks:[], pct:{a:50,u:60,s:100}},
+  {id:"genesis-key", co:"mwk-2", title:"제네시스 디지털 키", client:"(주)현대자동차", start:"2019-02", end:"2019-10", type:["Mobile App"], os:"Android", work:["신규"],
    role:"현대자동차 디지털 키 앱 프로젝트 담당자들이 다시 모여 진행한 프로젝트입니다. 초기에는 제네시스의 요건 정의서를 기준으로 제안과 디자인 시안을 위한 Key Screen 작업을 했고, 기능 확정 이후 앱 전체 UX/UI 설계를 담당했습니다.",
    tasks:[], pct:{a:30,u:80,s:100}, link:"https://play.google.com/store/apps/details?id=com.genesis.digitalcarkey"},
-  {id:"hyundai-key", co:"mwk-2", title:"현대자동차 디지털 키", client:"(주)현대자동차", start:"2018-06", end:"2019-02", type:["Mobile App"], os:"Android", work:["신규"],
+  {id:"hyundai-key", co:"mwk-2", title:"현대자동차 디지털 키", client:"(주)현대자동차", start:"2018-06", end:"2019-03", type:["Mobile App"], os:"Android", work:["신규"],
    intro:"BLE 원격 제어로 차량의 도어, 원격 시동, 비상 경보, 트렁크 열림 등을 제어하고 스마트폰으로 디지털 키를 공유하는 서비스입니다.",
    role:"'스마트 커넥트 App'이라는 이름으로 현대자동차 외 2개 회사가 모여 기능을 정의하는 단계부터 참여했습니다. 초기에는 전체 기능의 기본 스트럭처 설계를, 기능 확정 이후에는 앱 전체 UX/UI 설계를 담당했습니다.",
    tasks:["BLE 통신 기반 차량 제어(출입 & 시동) 신규 시스템 구축"], pct:{a:30,u:70,s:100}, key:true},
@@ -992,7 +992,7 @@ const PROJECTS = [
   {id:"benchbee", co:"benchbee", title:"벤치비 인터넷 속도측정", sub:"2.0 · 3.0 · HTML5", client:"(주)벤치비", start:"2014-09", end:"2017-02", type:["Mobile App","Web"], work:["운영 및 개선","고도화","리뉴얼"],
    role:"자사 서비스인 인터넷 속도측정 '벤치비'의 안드로이드·iOS 앱과 PC 웹 UX/UI 설계와 운영을 맡았습니다.",
    tasks:["벤치비 3.0 (2015.08–2017.02): 속도측정 기능 향상에 중점을 둔 업그레이드. 2012년 6월 이후 4년 만의 UX/UI 개편, 오픈 후 모바일 광고 게재와 운영","벤치비 HTML5 (2016.08–2016.11): 모바일과 웹이 하나의 서비스로 느껴지도록 PC 웹 UX/UI 설계","벤치비 2.0 (2014.09–2016.04): 안드로이드·iOS UX/UI 설계와 서비스 운영"],
-   pct:{a:70,u:70,s:100}, pctNote:"3.0 기준 (HTML5: 분석 70 · 기획 80 · 화면설계 100)", link:"https://play.google.com/store/apps/details?id=com.benchbee.AST"},
+   pct:{a:70,u:100,s:100}, pctNote:"3.0 기준 (HTML5: 분석 70 · 기획 80 · 화면설계 100)", link:"https://play.google.com/store/apps/details?id=com.benchbee.AST"},
   // 엔미디어플랫폼
   {id:"geto", co:"nmedia", title:"Geto Platform", sub:"Geto Gold · GT Touch · Geto Web", client:"㈜엔미디어플랫폼", start:"2014-03", end:"2014-07", type:["PC App","Web","Admin"], work:["고도화","운영 및 개선"],
    intro:"전국 PC방을 위한 엔미디어플랫폼의 매장 운영 플랫폼입니다. 카운터에서 요금 · 상품 · 손님 PC를 관리하는 PC방 관리 프로그램 Geto Gold, 손님이 직접 시간을 충전하고 상품권을 사는 무인 선불기 GT Touch, 등록 매장과 담당자를 관리하는 Geto Web 세 프로덕트로 구성됩니다.",
@@ -1131,8 +1131,8 @@ const JOB_ITEMS = {
   "mwk-2":[
     {n:"캐스트픽 · 온라인 배우 캐스팅 서비스", t:"Web · Admin", s:"2019-09", e:"2020-04", d:"castpick"},
     {n:"SK 텔링크 바른폰 관리자 사이트", t:"Admin", s:"2019-04", e:"2019-08", d:"barunphone"},
-    {n:"제네시스 디지털 키", t:"Mobile App", s:"2019-02", e:"2019-07", d:"genesis-key"},
-    {n:"현대자동차 디지털 키", t:"Mobile App", s:"2018-06", e:"2019-02", d:"hyundai-key"},
+    {n:"제네시스 디지털 키", t:"Mobile App", s:"2019-02", e:"2019-10", d:"genesis-key"},
+    {n:"현대자동차 디지털 키", t:"Mobile App", s:"2018-06", e:"2019-03", d:"hyundai-key"},
     {n:"롯데 캐슬 스마트홈", t:"Mobile App", s:"2017-12", e:"2018-04", d:"castle"},
     {n:"SK 브로드밴드 욜로톡", t:"Mobile App · PC App", s:"2017-06", e:"2018-07", d:"yolotalk"},
     {n:"노이타 스태프 앱", t:"Tablet App", s:"2017-02", e:"2017-05", d:"noita"}],
@@ -1185,8 +1185,8 @@ function renderTimeline(){
 const GROUPS = [
   {id:"g1", label:"2024 ~ 현재", ids:["tfactory","avis","mocean"]},
   {id:"g2", label:"2021 ~ 2024", ids:["rus-platform","surggram","neibus-25","neibus-admin","neibus-20"]},
-  {id:"g3", label:"2021년 이전", ids:["hyundai-key","genesis-key","yolotalk","benchbee","ssiat","bonusplus","wow","castpick","barunphone"]},
-  {id:"g4", label:"기타 (Etc.)", ids:["mintit","hkey-life","geto"]}
+  {id:"g3", label:"2021년 이전", ids:["mintit","hkey-life","castpick","barunphone","genesis-key","hyundai-key","yolotalk","benchbee","geto","ssiat","bonusplus","wow"]},
+  {id:"g4", label:"기타 (Etc.)", ids:[]}
 ];
 PROJECTS.forEach(p => { const g = GROUPS.slice(0,3).find(g => g.ids.includes(p.id)); p.group = g ? g.id : "g4"; if (!g && !GROUPS[3].ids.includes(p.id)) GROUPS[3].ids.push(p.id); });
 /* ---------- 전체 프로젝트 ---------- */
